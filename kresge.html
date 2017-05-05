@@ -3,37 +3,90 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>SlugTrail</title>
-  <h1>Kresge College</h1>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="stupid.css" type="text/css" />  
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-    <input type=text" id="myInput" onkeyup="myFunction()" 
-           placeholder="Search for rooms..">
-  <ul class="menu">
-      <li><a href="#">1-5</a></li>
-      <li><a href="#">6-10</a></li>
-      <li><a href="#">11-15</a></li>
-      <li><a href="#">16-20</a></li>
-      <li><a href="#">21-25</a></li>   
+    <p id="p1"></p>
+<!--    <input type=text" id="myInput" onkeyup="myFunction()" 
+           placeholder="Search for rooms..">-->
+    <div class="header">
+        <br/>
+        <div class="center"> <h1>Kresge College</h1></div>
+        <div class ="border">
+            <div class ="center padded">
+                <button class="btn yellow rounded" onclick="showSet1()">159 (Seminar Room)</button>  
+                <button class="btn yellow rounded" onclick="showSet1()">194</button>
+                <a href="#" class="btn yellow rounded">317</a>
+                <a href="#" class="btn yellow rounded">319</a>
+                <a href="#" class="btn yellow rounded">321</a>
+                <a href="#" class="btn yellow rounded">323</a>
+                <button class="btn yellow rounded" onclick="showSet1()">325</button>
+                <a href="#" class="btn yellow rounded">327</a>
+            </div>
+        </div> 
+    </div>
+    <div class="threequarter container padded center">
+        <ul id="imgList"></ul>
+    </div>
+    <!--ul id="imgList"></ul-->
     
+  
+<!--    <ul class="menu">
+      <li><a href="#">159 (Seminar Room)</a></li>  
+      <li><a href="#">194</a></li>
+      <li><a href="#">317</a></li>
+      <li><a href="#">319</a></li>
+      <li><a href="#">321</a></li>
+      <li><a href="#">323</a></li>
+      <li><a href="#">325</a></li>
+      <li><a href="#">327</a></li>-->
    <div ng-view></div>
 
+   
+   
+   <script>
+ 
+       
+       function showSet1(){
+           clearList();
+           showImg("slugtrail-colleges and departments/kresge/1kresge325.jpg");
+           document.getElementById("p1").innerHTML = "yer a hairy wizard";
+           showImg("slugtrail-colleges and departments/kresge/2kresge325.JPG");
+       }
+       
+       
+       function clearList(){
+           var list = document.getElementById("imgList");
+           while(list.hasChildNodes()){
+               list.removeChild(list.firstChild);
+           }
+       }
+       
+       function showImg(src){
+           var img = document.createElement("img");
+           img.src = src;
+           document.getElementById("imgList").appendChild(img);
+       }
+       
+       </script>
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
-  <script src="bower_components/angular/angular.js"></script>
+  
+  <!--script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
   <script src="view1/view1.js"></script>
   <script src="view2/view2.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
-  <script src="components/version/interpolate-filter.js"></script>
+  <script src="components/version/interpolate-filter.js"></script-->
 </body>
 </html>
 
