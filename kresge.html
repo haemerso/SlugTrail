@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="app.css">
-  <link rel="stylesheet" href="stupid.css" type="text/css" />  
+  <link rel="stylesheet" href="stupid1.css" type="text/css" />  
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
@@ -21,19 +21,35 @@
         <div class ="border">
             <div class ="center padded">
                 <button class="btn yellow rounded" onclick="showSet1()">159 (Seminar Room)</button>  
-                <button class="btn yellow rounded" onclick="showSet1()">194</button>
+                <button class="btn yellow rounded" onclick="showSet2()">194</button>
                 <a href="#" class="btn yellow rounded">317</a>
                 <a href="#" class="btn yellow rounded">319</a>
                 <a href="#" class="btn yellow rounded">321</a>
                 <a href="#" class="btn yellow rounded">323</a>
-                <button class="btn yellow rounded" onclick="showSet1()">325</button>
+                <button class="btn yellow rounded" onclick="showSet3()">325</button>
                 <a href="#" class="btn yellow rounded">327</a>
             </div>
         </div> 
     </div>
-    <div class="threequarter container padded center">
-        <ul id="imgList"></ul>
-    </div>
+    <!--div class="threequarter container padded center"-->
+	<table class="center">
+
+        <tr>
+		<th><img id="img_slot1" style="width:20em"></th>
+		<th><p id="txt_slot1" style="float: left"></p></th>
+		<br>
+		
+		<tr>
+		<th><img id="img_slot2" style="width:20em"></th>
+		<th><p id="txt_slot2" style="float: left"></p></th>
+		<br>
+		
+		<tr>
+		<th><img id="img_slot3" style="width:20em"></th>
+		<th><p id="txt_slot3" style="float: left"></p></th>
+		<br>
+    </table>
+	<!--/div-->
     <!--ul id="imgList"></ul-->
     
   
@@ -50,30 +66,52 @@
 
    
    
-   <script>
- 
+    <script>
+	function showSet1(){
+		//showImg(name of image slot, image src);
+	    showImg("img_slot1","./slugtrail-colleges and departments/1-Oakes.jpg");
+		//showImg(name of text slot, content of text);
+		showTxt("txt_slot1","this is test text");
+		showImg("img_slot2","./slugtrail-colleges and departments/kresge.jpg");
+		showTxt("txt_slot2","this is more test text");
+		showImg("img_slot3","./slugtrail-colleges and departments/oakes.jpg");
+
+	}
+	
+	function showSet2(){
+	    showImg("img_slot1","./slugtrail-colleges and departments/E2.jpg");
+		showTxt("txt_slot1","this is more text");
+		showImg("img_slot2","./slugtrail-colleges and departments/E1.jpg");
+		showTxt("txt_slot2","");
+		showImg("img_slot3","./slugtrail-colleges and departments/arcenter.jpg");
+	}
+	
+	function showSet3(){
+	    showImg("img_slot1","./slugtrail-colleges and departments/merrill.jpg");
+		showTxt("txt_slot1"," ");
+		showImg("img_slot2","./slugtrail-colleges and departments/crown.jpg");
+		showImg("img_slot3","./slugtrail-colleges and departments/cowell.jpg");
+	}
+	
+	function showImg(slot_num, src){
+		var img = document.createElement("img");
+		var snum = slot_num;
+		img.src = src;
+		document.getElementById(slot_num).src=img.src;
+	}
+	
+	function showTxt(slot_num, text){
+		var p = document.createElement("p");
+		var snum = slot_num;
+		//var th_content = text;
+		document.getElementById(slot_num).innerHTML = text;
+	}
+
        
-       function showSet1(){
-           clearList();
-           showImg("slugtrail-colleges and departments/kresge/1kresge325.jpg");
-           document.getElementById("p1").innerHTML = "yer a hairy wizard";
-           showImg("slugtrail-colleges and departments/kresge/2kresge325.JPG");
-       }
-       
-       
-       function clearList(){
-           var list = document.getElementById("imgList");
-           while(list.hasChildNodes()){
-               list.removeChild(list.firstChild);
-           }
-       }
-       
-       function showImg(src){
-           var img = document.createElement("img");
-           img.src = src;
-           document.getElementById("imgList").appendChild(img);
-       }
-       
+	if($.mobile.media("screen and (max-device-width: 480px)")) {
+		// Change viewport for smaller devices
+		$('meta[name=viewport]').attr('content','width=device-width, initial-scale=1');
+	}
        </script>
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
@@ -89,4 +127,3 @@
   <script src="components/version/interpolate-filter.js"></script-->
 </body>
 </html>
-
