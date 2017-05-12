@@ -1,0 +1,362 @@
+<head>
+  <link ref="stylesheet" href="index.css" type="text/css" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SlugTrail</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="stupid1.css" type="text/css" />  
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+    <p id="p1"></p>
+<!--    <input type=text" id="myInput" onkeyup="myFunction()" 
+           placeholder="Search for rooms..">-->
+    <div class="header">
+        <br/>
+        <div class="center"> <h1>Kresge College</h1></div>
+        <div class ="border">
+            <div class ="center padded">
+                <button class="btn yellow rounded" onclick="showSet1()">159 (Seminar Room)</button>  
+                <button class="btn yellow rounded" onclick="showSet2()">194</button>
+                <button class="btn yellow rounded" onclick="showSet3()">317</button>
+                <button class="btn yellow rounded" onclick="showSet4()">319</button>
+                <button class="btn yellow rounded" onclick="showSet5()">321</button>
+                <button class="btn yellow rounded" onclick="showSet6()">323</button>
+                <button class="btn yellow rounded" onclick="showSet7()">325</button>
+                <button class="btn yellow rounded" onclick="showSet8()">327</button>
+            </div>
+        </div> 
+    </div>
+    <!--div class="threequarter container padded center"-->
+	<table class="center">
+
+        <tr>
+		<th><img id="img_slot1" style="width:20em"></th>
+		<th><p id="txt_slot1" style="float: left"></p></th>
+		<br>
+		
+		<tr>
+		<th><img id="img_slot2" style="width:20em"></th>
+		<th><p id="txt_slot2" style="float: left"></p></th>
+		<br>
+		
+		<tr>
+		<th><img id="img_slot3" style="width:20em"></th>
+		<th><p id="txt_slot3" style="float: left"></p></th>
+		<br>
+                
+                <tr>
+		<th><img id="img_slot4" style="width:20em"></th>
+		<th><p id="txt_slot4" style="float: left"></p></th>
+		<br>
+                
+                <tr>
+		<th><img id="img_slot5" style="width:20em"></th>
+		<th><p id="txt_slot5" style="float: left"></p></th>
+		<br>
+                
+                <tr>
+		<th><img id="img_slot6" style="width:20em"></th>
+		<th><p id="txt_slot6" style="float: left"></p></th>
+		<br>
+                
+                <tr>
+		<th><img id="img_slot7" style="width:20em"></th>
+		<th><p id="txt_slot7" style="float: left"></p></th>
+		<br>
+                
+                <tr>
+		<th><img id="img_slot8" style="width:20em"></th>
+		<th><p id="txt_slot8" style="float: left"></p></th>
+		<br>
+                
+                <tr>
+		<th><img id="img_slot9" style="width:20em"></th>
+		<th><p id="txt_slot9" style="float: left"></p></th>
+		<br>
+                
+                <tr>
+		<th><img id="img_slot10" style="width:20em"></th>
+		<th><p id="txt_slot10" style="float: left"></p></th>
+		<br>
+                
+                <tr>
+		<th><img id="img_slot11" style="width:20em"></th>
+		<th><p id="txt_slot11" style="float: left"></p></th>
+		<br>
+                
+                <tr>
+		<th><img id="img_slot12" style="width:20em"></th>
+		<th><p id="txt_slot12" style="float: left"></p></th>
+		<br>
+                
+                <tr>
+		<th><img id="img_slot13" style="width:20em"></th>
+		<th><p id="txt_slot13" style="float: left"></p></th>
+		<br>
+                
+                <tr>
+		<th><img id="img_slot14" style="width:20em"></th>
+		<th><p id="txt_slot14" style="float: left"></p></th>
+		<br>
+                
+                <tr>
+		<th><img id="img_slot15" style="width:20em"></th>
+		<th><p id="txt_slot15" style="float: left"></p></th>
+		<br>
+    </table>
+	<!--/div-->
+    <!--ul id="imgList"></ul-->
+    
+   <div ng-view></div>
+
+   
+   
+    <script>
+	function showSet1(){
+		//showImg(name of image slot, image src);
+                //showImg("img_slot1","https://lh3.googleusercontent.com/8LKhF9LpK6xKpar244kqQFGLD6Y11bp40rf1LWh-4t02b7V8jrqrAtodZLSUKq0bhYseO-Lum8WEww=w1366-h599-rw");
+		//showImg(name of text slot, content of text);
+                showImg("img_slot1","slugtrail-colleges and departments/Kresge/foundation/1-kresge.JPG");
+		showTxt("txt_slot1","fist description");
+		showImg("img_slot2","slugtrail-colleges and departments/Kresge/foundation/2-kresge.jpg");
+		showTxt("txt_slot2","this is more test text");
+		showImg("img_slot3","slugtrail-colleges and departments/Kresge/foundation/3-kresge.jpg");
+                showTxt("txt_slot3","this is more test text");
+                showImg("img_slot4","slugtrail-colleges and departments/Kresge/foundation/4-kresge.jpg");
+                showTxt("txt_slot4","this is more test text");
+                showImg("img_slot5","slugtrail-colleges and departments/Kresge/foundation/5-kresge.jpg");
+                showTxt("txt_slot5","this is more test text");
+                showImg("img_slot6","slugtrail-colleges and departments/Kresge/foundation/6-kresge.jpg");
+                showTxt("txt_slot6","this is more test text");
+                showImg("img_slot7","slugtrail-colleges and departments/Kresge/kresge159/1kresge159.jpg");
+                showTxt("txt_slot7","this is more test text");
+                showImg("img_slot8","slugtrail-colleges and departments/Kresge/kresge159/2kresge159.jpg");
+                showTxt("txt_slot8","this is more test text");
+                showImg("img_slot9","slugtrail-colleges and departments/Kresge/kresge159/3kresge159.jpg");
+                showTxt("txt_slot9","this is more test text");
+                showImg("img_slot10","slugtrail-colleges and departments/Kresge/kresge159/4kresge159.jpg");
+                showTxt("txt_slot10","this is more test text");
+                showImg("img_slot11","slugtrail-colleges and departments/Kresge/kresge159/5kresge159.jpg");
+                showTxt("txt_slot11","this is more test text");
+                showImg("img_slot12","slugtrail-colleges and departments/Kresge/kresge159/6kresge159.jpg");
+                showTxt("txt_slot12","this is more test text");
+                showImg("img_slot13","slugtrail-colleges and departments/Kresge/kresge159/7kresge159.jpg");
+                showTxt("txt_slot13","this is more test text");
+                showImg("img_slot14","slugtrail-colleges and departments/Kresge/kresge159/8kresge159.jpg");
+                showTxt("txt_slot14","this is more test text");
+                showImg("img_slot15","slugtrail-colleges and departments/Kresge/kresge159/9kresge159.JPG");
+                showTxt("txt_slot15","this is more test text");
+	}
+	
+	function showSet2(){
+                showImg("img_slot1","slugtrail-colleges and departments/Kresge/foundation/1-kresge.JPG");
+		showTxt("txt_slot1","fist description");
+		showImg("img_slot2","slugtrail-colleges and departments/Kresge/foundation/2-kresge.jpg");
+		showTxt("txt_slot2","this is more test text");
+		showImg("img_slot3","slugtrail-colleges and departments/Kresge/foundation/3-kresge.jpg");
+                showTxt("txt_slot3","this is more test text");
+                showImg("img_slot4","slugtrail-colleges and departments/Kresge/foundation/4-kresge.jpg");
+                showTxt("txt_slot4","this is more test text");
+                showImg("img_slot5","slugtrail-colleges and departments/Kresge/foundation/5-kresge.jpg");
+                showTxt("txt_slot5","this is more test text");
+                showImg("img_slot6","slugtrail-colleges and departments/Kresge/foundation/6-kresge.jpg");
+                showTxt("txt_slot6","this is more test text");
+                
+                showImg("img_slot7","slugtrail-colleges and departments/Kresge/kresge194/1kresge194.jpg");
+                showTxt("txt_slot7","this is more test text");
+                showImg("img_slot8","slugtrail-colleges and departments/Kresge/kresge194/2kresge194.jpg");
+                showTxt("txt_slot8","this is more test text");
+                showImg("img_slot9","slugtrail-colleges and departments/Kresge/kresge194/3kresge194.jpg");
+                showTxt("txt_slot9","this is more test text");
+                showImg("img_slot10","slugtrail-colleges and departments/Kresge/kresge194/4kresge194.jpg");
+                showTxt("txt_slot10","this is more test text");
+                showImg("img_slot11","slugtrail-colleges and departments/Kresge/kresge194/5kresge194.jpg");
+                showTxt("txt_slot11","this is more test text");
+                showImg("img_slot12","slugtrail-colleges and departments/Kresge/kresge194/6kresge194.jpg");
+                showTxt("txt_slot12","this is more test text");
+                showImg("img_slot13","slugtrail-colleges and departments/Kresge/kresge194/7kresge194.jpg");
+                showTxt("txt_slot13","this is more test text");
+                showImg("img_slot14","slugtrail-colleges and departments/Kresge/kresge194/8kresge194.JPG");
+                showTxt("txt_slot14","this is more test text");
+                showImg("img_slot15","slugtrail-colleges and departments/Capture.jpg");
+                showTxt("txt_slot15"," ");
+	}
+	
+	function showSet3(){
+                showImg("img_slot1","slugtrail-colleges and departments/Kresge/foundation/1-kresge.JPG");
+		showTxt("txt_slot1","fist description");
+		showImg("img_slot2","slugtrail-colleges and departments/Kresge/foundation/2-kresge.jpg");
+		showTxt("txt_slot2","this is more test text");
+		showImg("img_slot3","slugtrail-colleges and departments/Kresge/foundation/3-kresge.jpg");
+                showTxt("txt_slot3","this is more test text");
+                showImg("img_slot4","slugtrail-colleges and departments/Kresge/foundation/4-kresge.jpg");
+                showTxt("txt_slot4","this is more test text");
+                showImg("img_slot5","slugtrail-colleges and departments/Kresge/foundation/5-kresge.jpg");
+                showTxt("txt_slot5","this is more test text");
+                showImg("img_slot6","slugtrail-colleges and departments/Kresge/foundation/6-kresge.jpg");
+                showTxt("txt_slot6","this is more test text");
+                
+                showImg("img_slot7","slugtrail-colleges and departments/Kresge/kresge317/1kresge317.jpg");
+                showTxt("txt_slot7","this is more test text");
+                showImg("img_slot8","slugtrail-colleges and departments/Kresge/kresge317/2kresge317.jpg");
+                showTxt("txt_slot8","this is more test text");
+                showImg("img_slot9","slugtrail-colleges and departments/Kresge/kresge317/3kresge317.jpg");
+                showTxt("txt_slot9","this is more test text");
+                showImg("img_slot10","slugtrail-colleges and departments/Kresge/kresge317/4kresge317.jpg");
+                showTxt("txt_slot10","this is more test text");
+                showImg("img_slot11","slugtrail-colleges and departments/Kresge/kresge317/5kresge317.jpg");
+                showTxt("txt_slot11","this is more test text");
+                showImg("img_slot12","slugtrail-colleges and departments/Kresge/kresge317/6kresge317.jpg");
+                showTxt("txt_slot12","this is more test text");
+                showImg("img_slot13","slugtrail-colleges and departments/Kresge/kresge317/7kresge317.JPG");
+                showTxt("txt_slot13","this is more test text");
+	}
+	
+        function showSet4(){
+                showImg("img_slot1","slugtrail-colleges and departments/Kresge/foundation/1-kresge.JPG");
+		showTxt("txt_slot1","fist description");
+		showImg("img_slot2","slugtrail-colleges and departments/Kresge/foundation/2-kresge.jpg");
+		showTxt("txt_slot2","this is more test text");
+		showImg("img_slot3","slugtrail-colleges and departments/Kresge/foundation/3-kresge.jpg");
+                showTxt("txt_slot3","this is more test text");
+                showImg("img_slot4","slugtrail-colleges and departments/Kresge/foundation/4-kresge.jpg");
+                showTxt("txt_slot4","this is more test text");
+                showImg("img_slot5","slugtrail-colleges and departments/Kresge/foundation/5-kresge.jpg");
+                showTxt("txt_slot5","this is more test text");
+                showImg("img_slot6","slugtrail-colleges and departments/Kresge/foundation/6-kresge.jpg");
+                showTxt("txt_slot6","this is more test text");
+                
+                showImg("img_slot7","slugtrail-colleges and departments/Kresge/kresge319/1kresge319.jpg");
+                showTxt("txt_slot7","this is more test text");
+                showImg("img_slot8","slugtrail-colleges and departments/Kresge/kresge319/2kresge319.jpg");
+                showTxt("txt_slot8","this is more test text");
+                showImg("img_slot9","slugtrail-colleges and departments/Kresge/kresge319/3kresge319.jpg");
+                showTxt("txt_slot9","this is more test text");
+                showImg("img_slot10","slugtrail-colleges and departments/Kresge/kresge319/4kresge319.JPG");
+	}
+        
+        function showSet5(){
+                showImg("img_slot1","slugtrail-colleges and departments/Kresge/foundation/1-kresge.JPG");
+		showTxt("txt_slot1","fist description");
+		showImg("img_slot2","slugtrail-colleges and departments/Kresge/foundation/2-kresge.jpg");
+		showTxt("txt_slot2","this is more test text");
+		showImg("img_slot3","slugtrail-colleges and departments/Kresge/foundation/3-kresge.jpg");
+                showTxt("txt_slot3","this is more test text");
+                showImg("img_slot4","slugtrail-colleges and departments/Kresge/foundation/4-kresge.jpg");
+                showTxt("txt_slot4","this is more test text");
+                showImg("img_slot5","slugtrail-colleges and departments/Kresge/foundation/5-kresge.jpg");
+                showTxt("txt_slot5","this is more test text");
+                showImg("img_slot6","slugtrail-colleges and departments/Kresge/foundation/6-kresge.jpg");
+                showTxt("txt_slot6","this is more test text");
+                
+                showImg("img_slot7","slugtrail-colleges and departments/Kresge/kresge321/1kresge321.jpg");
+                showTxt("txt_slot7","this is more test text");
+                showImg("img_slot8","slugtrail-colleges and departments/Kresge/kresge321/2kresge321.jpg");
+                showTxt("txt_slot8","this is more test text");
+                showImg("img_slot9","slugtrail-colleges and departments/Kresge/kresge321/3kresge321.jpg");
+                showTxt("txt_slot9","this is more test text");
+                showImg("img_slot10","slugtrail-colleges and departments/Kresge/kresge321/4kresge321.JPG");
+                showTxt("txt_slot10","this is more test text");
+	}
+        
+        function showSet6(){
+                showImg("img_slot1","slugtrail-colleges and departments/Kresge/foundation/1-kresge.JPG");
+		showTxt("txt_slot1","fist description");
+		showImg("img_slot2","slugtrail-colleges and departments/Kresge/foundation/2-kresge.jpg");
+		showTxt("txt_slot2","this is more test text");
+		showImg("img_slot3","slugtrail-colleges and departments/Kresge/foundation/3-kresge.jpg");
+                showTxt("txt_slot3","this is more test text");
+                showImg("img_slot4","slugtrail-colleges and departments/Kresge/foundation/4-kresge.jpg");
+                showTxt("txt_slot4","this is more test text");
+                showImg("img_slot5","slugtrail-colleges and departments/Kresge/foundation/5-kresge.jpg");
+                showTxt("txt_slot5","this is more test text");
+                showImg("img_slot6","slugtrail-colleges and departments/Kresge/foundation/6-kresge.jpg");
+                showTxt("txt_slot6","this is more test text");
+                
+                showImg("img_slot7","slugtrail-colleges and departments/Kresge/kresge323/1kresge323.jpg");
+                showTxt("txt_slot7","this is more test text");
+                showImg("img_slot8","slugtrail-colleges and departments/Kresge/kresge323/2kresge323.jpg");
+                showTxt("txt_slot8","this is more test text");
+                showImg("img_slot9","slugtrail-colleges and departments/Kresge/kresge323/3kresge323.jpg");
+                showTxt("txt_slot9","this is more test text");
+                showImg("img_slot10","slugtrail-colleges and departments/Kresge/kresge323/4kresge323.JPG");
+                showTxt("txt_slot10","this is more test text");               
+	}
+        
+        function showSet7(){
+                showImg("img_slot1","slugtrail-colleges and departments/Kresge/foundation/1-kresge.JPG");
+		showTxt("txt_slot1","fist description");
+		showImg("img_slot2","slugtrail-colleges and departments/Kresge/foundation/2-kresge.jpg");
+		showTxt("txt_slot2","this is more test text");
+		showImg("img_slot3","slugtrail-colleges and departments/Kresge/foundation/3-kresge.jpg");
+                showTxt("txt_slot3","this is more test text");
+                showImg("img_slot4","slugtrail-colleges and departments/Kresge/foundation/4-kresge.jpg");
+                showTxt("txt_slot4","this is more test text");
+                showImg("img_slot5","slugtrail-colleges and departments/Kresge/foundation/5-kresge.jpg");
+                showTxt("txt_slot5","this is more test text");
+                showImg("img_slot6","slugtrail-colleges and departments/Kresge/foundation/6-kresge.jpg");
+                showTxt("txt_slot6","this is more test text");
+                
+                showImg("img_slot7","slugtrail-colleges and departments/Kresge/kresge325/1kresge325.jpg");
+                showTxt("txt_slot7","this is more test text");
+                showImg("img_slot8","slugtrail-colleges and departments/Kresge/kresge325/2kresge325.JPG");
+                showTxt("txt_slot8","this is more test text");
+	}
+        
+        function showSet8(){
+                showImg("img_slot1","slugtrail-colleges and departments/Kresge/foundation/1-kresge.JPG");
+		showTxt("txt_slot1","fist description");
+		showImg("img_slot2","slugtrail-colleges and departments/Kresge/foundation/2-kresge.jpg");
+		showTxt("txt_slot2","this is more test text");
+		showImg("img_slot3","slugtrail-colleges and departments/Kresge/foundation/3-kresge.jpg");
+                showTxt("txt_slot3","this is more test text");
+                showImg("img_slot4","slugtrail-colleges and departments/Kresge/foundation/4-kresge.jpg");
+                showTxt("txt_slot4","this is more test text");
+                showImg("img_slot5","slugtrail-colleges and departments/Kresge/foundation/5-kresge.jpg");
+                showTxt("txt_slot5","this is more test text");
+                showImg("img_slot6","slugtrail-colleges and departments/Kresge/foundation/6-kresge.jpg");
+                showTxt("txt_slot6","this is more test text");
+                
+                showImg("img_slot7","slugtrail-colleges and departments/Kresge/kresge327/1kresge327.JPG");
+                showTxt("txt_slot7","this is more test text");
+	}
+        
+	function showImg(slot_num, src){
+		var img = document.createElement("img");
+		var snum = slot_num;
+		img.src = src;
+		document.getElementById(slot_num).src=img.src;
+	}
+	
+	function showTxt(slot_num, text){
+		var p = document.createElement("p");
+		var snum = slot_num;
+		//var th_content = text;
+		document.getElementById(slot_num).innerHTML = text;
+	}
+
+       
+	if($.mobile.media("screen and (max-device-width: 480px)")) {
+		// Change viewport for smaller devices
+		$('meta[name=viewport]').attr('content','width=device-width, initial-scale=1');
+	}
+       </script>
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  
+  <!--script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="view2/view2.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script-->
+</body>
+</html>
