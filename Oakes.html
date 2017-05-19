@@ -3,12 +3,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>SlugTrail</title>
-  <h1>Oakes College</h1>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="stupid.css" type="text/css" />  
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
@@ -102,6 +102,7 @@
 		//showImg(name of image slot, image src);
                 //showImg("img_slot1","https://lh3.googleusercontent.com/8LKhF9LpK6xKpar244kqQFGLD6Y11bp40rf1LWh-4t02b7V8jrqrAtodZLSUKq0bhYseO-Lum8WEww=w1366-h599-rw");
 		//showImg(name of text slot, content of text);
+                showMap("img_slot1", "slugtrail-colleges and departments/Oakes/oakes learning center/oakeslearningcenter.jpg");
                 showImg("img_slot1","slugtrail-colleges and departments/Oakes/foundation/1-OakesFoundation.JPG");
 		showTxt("txt_slot1","Begin at the oakes bus stop.");
 		showImg("img_slot2","slugtrail-colleges and departments/Oakes/foundation/2-OakesFoundation.jpg");
@@ -127,6 +128,7 @@
                 showTxt("txt_slot11","Voila!");
 	
 	function showSet2(){
+                showMap("img_slot1", "slugtrail-colleges and departments/Oakes/Oakes 101,102/map101,102.jpg");
                 showImg("img_slot1","slugtrail-colleges and departments/Oakes/foundation/1-OakesFoundation.JPG");
 		showTxt("txt_slot1","Begin at the oakes bus stop.");
 		showImg("img_slot2","slugtrail-colleges and departments/Oakes/foundation/2-OakesFoundation.jpg");
@@ -149,6 +151,7 @@
 	}
 	
 	function showSet3(){
+                showMap("img_slot1", "slugtrail-colleges and departments/Oakes/Oakes 103,104/mapOakes103,104.jpg");        
                 showImg("img_slot1","slugtrail-colleges and departments/Oakes/foundation/1-OakesFoundation.JPG");
 		showTxt("txt_slot1","Begin at the oakes bus stop.");
 		showImg("img_slot2","slugtrail-colleges and departments/Oakes/foundation/2-OakesFoundation.jpg");
@@ -173,6 +176,7 @@
 	}
 	
         function showSet4(){
+                showMap("img_slot1", "slugtrail-colleges and departments/Oakes/Oakes 105,106/105, 106.jpg");
                 showImg("img_slot1","slugtrail-colleges and departments/Oakes/foundation/1-OakesFoundation.JPG");
 		showTxt("txt_slot1","Begin at the oakes bus stop.");
 		showImg("img_slot2","slugtrail-colleges and departments/Oakes/foundation/2-OakesFoundation.jpg");
@@ -204,6 +208,7 @@
 	}
         
         function showSet5(){
+                showMap("img_slot1", "slugtrail-colleges and departments/Oakes/Oakes 108,109,111/108, 109, 111.jpg");
                 showImg("img_slot1","slugtrail-colleges and departments/Oakes/foundation/1-OakesFoundation.JPG");
 		showTxt("txt_slot1","Begin at the oakes bus stop.");
 		showImg("img_slot2","slugtrail-colleges and departments/Oakes/foundation/2-OakesFoundation.jpg");
@@ -235,6 +240,7 @@
 	}
         
         function showSet6(){
+                showMap("img_slot1", "slugtrail-colleges and departments/Oakes/upstairs classrooms/upstairs classrooms.jpg");
                 showImg("img_slot1","slugtrail-colleges and departments/Oakes/foundation/1-OakesFoundation.JPG");
 		showTxt("txt_slot1","Begin at the oakes bus stop.");
 		showImg("img_slot2","slugtrail-colleges and departments/Oakes/foundation/2-OakesFoundation.jpg");
@@ -267,6 +273,17 @@
                 showImg("img_slot15","slugtrail-colleges and departments/Oakes/upper classrooms/9-upperclassrooms.JPG");
                 showTxt("txt_slot15","At the end of the upstairs hall are 220, 222, 224. Voila!");
 	}
+        
+        function showMap(slot_num, src){
+            var img = document.createElement("img");
+            var snum = slot_num;
+            img.src = src;
+            var el = document.getElementById(slot_num);
+            el.style.position = "fixed";
+            el.style.top = 0;
+            el.style.right = 0;
+            el.src = img.src;
+        }
         
 	function showImg(slot_num, src){
 		var img = document.createElement("img");

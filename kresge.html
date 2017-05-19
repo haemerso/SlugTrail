@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="app.css">
-  <link rel="stylesheet" href="stupid1.css" type="text/css" />  
+  <link rel="stylesheet" href="stupid.css" type="text/css" /> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
@@ -29,10 +30,16 @@
                 <button class="btn yellow rounded" onclick="showSet7()">325</button>
                 <button class="btn yellow rounded" onclick="showSet8()">327</button>
             </div>
+            
+            <script>
+                $("button").on("click", function(){
+                    $("button").removeClass("selected");
+                    $(this).addClass("selected")});
+            </script>
         </div> 
     </div>
     <!--div class="threequarter container padded center"-->
-	<table class="center">
+	<table>
 
         <tr>
 		<th><img id="img_slot1" style="width:20em"></th>
@@ -108,6 +115,10 @@
 		<th><img id="img_slot15" style="width:20em"></th>
 		<th><p id="txt_slot15" style="float: left"></p></th>
 		<br>
+                
+                <tr>
+		<th><img id="map_slot1" style="width:20em"></th>
+		<br>
     </table>
 	<!--/div-->
     <!--ul id="imgList"></ul-->
@@ -121,6 +132,7 @@
 		//showImg(name of image slot, image src);
                 //showImg("img_slot1","https://lh3.googleusercontent.com/8LKhF9LpK6xKpar244kqQFGLD6Y11bp40rf1LWh-4t02b7V8jrqrAtodZLSUKq0bhYseO-Lum8WEww=w1366-h599-rw");
 		//showImg(name of text slot, content of text);
+                showMap("map_slot1", "slugtrail-colleges and departments/Kresge/kresge159/seminar.png");
                 showImg("img_slot1","slugtrail-colleges and departments/Kresge/foundation/1-kresge.JPG");
 		showTxt("txt_slot1","Begin at the Kresge bus stop.");
 		showImg("img_slot2","slugtrail-colleges and departments/Kresge/foundation/2-kresge.jpg");
@@ -155,6 +167,7 @@
 	}
 	
 	function showSet2(){
+                showMap("map_slot1", "slugtrail-colleges and departments/Kresge/kresge194/194.png");
                 showImg("img_slot1","slugtrail-colleges and departments/Kresge/foundation/1-kresge.JPG");
 		showTxt("txt_slot1","Begin at the Kresge bus stop.");
 		showImg("img_slot2","slugtrail-colleges and departments/Kresge/foundation/2-kresge.jpg");
@@ -189,6 +202,7 @@
 	}
 	
 	function showSet3(){
+                showMap("map_slot1", "slugtrail-colleges and departments/Kresge/kresge317/317.png");
                 showImg("img_slot1","slugtrail-colleges and departments/Kresge/foundation/1-kresge.JPG");
 		showTxt("txt_slot1","Begin at the Kresge bus stop.");
 		showImg("img_slot2","slugtrail-colleges and departments/Kresge/foundation/2-kresge.jpg");
@@ -224,6 +238,7 @@
 	}
 	
         function showSet4(){
+                showMap("map_slot1", "slugtrail-colleges and departments/Kresge/kresge319/319.png");
                 showImg("img_slot1","slugtrail-colleges and departments/Kresge/foundation/1-kresge.JPG");
 		showTxt("txt_slot1","Begin at the Kresge bus stop.");
 		showImg("img_slot2","slugtrail-colleges and departments/Kresge/foundation/2-kresge.jpg");
@@ -259,6 +274,7 @@
 	}
         
         function showSet5(){
+                showMap("map_slot1", "slugtrail-colleges and departments/Kresge/kresge321/mapkresge321.png");
                 showImg("img_slot1","slugtrail-colleges and departments/Kresge/foundation/1-kresge.JPG");
 		showTxt("txt_slot1","Begin at the Kresge bus stop.");
 		showImg("img_slot2","slugtrail-colleges and departments/Kresge/foundation/2-kresge.jpg");
@@ -294,6 +310,7 @@
 	}
         
         function showSet6(){
+                showMap("map_slot1", "slugtrail-colleges and departments/Kresge/kresge323/325, 323.png");
                 showImg("img_slot1","slugtrail-colleges and departments/Kresge/foundation/1-kresge.JPG");
 		showTxt("txt_slot1","Begin at the Kresge bus stop.");
 		showImg("img_slot2","slugtrail-colleges and departments/Kresge/foundation/2-kresge.jpg");
@@ -329,6 +346,7 @@
 	}
         
         function showSet7(){
+                showMap("map_slot1", "slugtrail-colleges and departments/Kresge/kresge325/325.png");
                 showImg("img_slot1","slugtrail-colleges and departments/Kresge/foundation/1-kresge.JPG");
 		showTxt("txt_slot1","Begin at the Kresge bus stop.");
 		showImg("img_slot2","slugtrail-colleges and departments/Kresge/foundation/2-kresge.jpg");
@@ -364,6 +382,7 @@
 	}
         
         function showSet8(){
+                showMap("map_slot1", "slugtrail-colleges and departments/Kresge/kresge327/327.png");
                 showImg("img_slot1","slugtrail-colleges and departments/Kresge/foundation/1-kresge.JPG");
 		showTxt("txt_slot1","Begin at the Kresge bus stop.");
 		showImg("img_slot2","slugtrail-colleges and departments/Kresge/foundation/2-kresge.jpg");
@@ -398,6 +417,20 @@
                 cleanSlot("txt_slot15");
 	}
         
+        
+        
+        function showMap(slot_num, src){
+            var img = document.createElement("img");
+            var snum = slot_num;
+            img.src = src;
+            var el = document.getElementById(slot_num);
+            el.style.position = "fixed";
+            el.style.bottom = 0;
+            el.style.right = 0;
+//            el.style.paddingTop= "245px";
+            el.src = img.src;
+        }
+               
 	function showImg(slot_num, src){
 		var img = document.createElement("img");
 		var snum = slot_num;
