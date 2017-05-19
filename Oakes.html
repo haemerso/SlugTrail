@@ -1,0 +1,311 @@
+<head>
+  <link ref="stylesheet" href="index.css" type="text/css" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SlugTrail</title>
+  <h1>Oakes College</h1>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <br/>
+        <div class="center"> <h1>Oakes College</h1></div>
+        <div class ="border">
+            <div class ="center padded">
+                <button class="btn yellow rounded" onclick="showSet1()">201 (Learning Center)</button>  
+                <button class="btn yellow rounded" onclick="showSet2()">101, 102</button>
+                <button class="btn yellow rounded" onclick="showSet3()">103, 104</button>
+                <button class="btn yellow rounded" onclick="showSet4()">105, 106</button>
+                <button class="btn yellow rounded" onclick="showSet5()">108, 109, 111</button>
+                <button class="btn yellow rounded" onclick="showSet6()">200's</button>
+            </div>
+        </div> 
+    </div> 
+    
+    <table class="center">
+
+        <tr>
+		<th><img id="img_slot1" style="width:20em"></th>
+		<th><p id="txt_slot1" style="float: left"></p></th>
+		<br>
+		
+		<tr>
+		<th><img id="img_slot2" style="width:20em"></th>
+		<th><p id="txt_slot2" style="float: left"></p></th>
+		<br>
+		
+		<tr>
+		<th><img id="img_slot3" style="width:20em"></th>
+		<th><p id="txt_slot3" style="float: left"></p></th>
+		<br>
+                
+                <tr>
+		<th><img id="img_slot4" style="width:20em"></th>
+		<th><p id="txt_slot4" style="float: left"></p></th>
+		<br>
+                
+                <tr>
+		<th><img id="img_slot5" style="width:20em"></th>
+		<th><p id="txt_slot5" style="float: left"></p></th>
+		<br>
+                
+                <tr>
+		<th><img id="img_slot6" style="width:20em"></th>
+		<th><p id="txt_slot6" style="float: left"></p></th>
+		<br>
+                
+                <tr>
+		<th><img id="img_slot7" style="width:20em"></th>
+		<th><p id="txt_slot7" style="float: left"></p></th>
+		<br>
+                
+                <tr>
+		<th><img id="img_slot8" style="width:20em"></th>
+		<th><p id="txt_slot8" style="float: left"></p></th>
+		<br>
+                
+                <tr>
+		<th><img id="img_slot9" style="width:20em"></th>
+		<th><p id="txt_slot9" style="float: left"></p></th>
+		<br>
+                
+                <tr>
+		<th><img id="img_slot10" style="width:20em"></th>
+		<th><p id="txt_slot10" style="float: left"></p></th>
+		<br>
+                
+                <tr>
+		<th><img id="img_slot11" style="width:20em"></th>
+		<th><p id="txt_slot11" style="float: left"></p></th>
+		<br>
+                
+                <tr>
+		<th><img id="img_slot12" style="width:20em"></th>
+		<th><p id="txt_slot12" style="float: left"></p></th>
+		<br>
+                
+                <tr>
+		<th><img id="img_slot13" style="width:20em"></th>
+		<th><p id="txt_slot13" style="float: left"></p></th>
+                <br>
+    </table>
+    
+   <div ng-view></div>
+
+    <script>
+	function showSet1(){
+		//showImg(name of image slot, image src);
+                //showImg("img_slot1","https://lh3.googleusercontent.com/8LKhF9LpK6xKpar244kqQFGLD6Y11bp40rf1LWh-4t02b7V8jrqrAtodZLSUKq0bhYseO-Lum8WEww=w1366-h599-rw");
+		//showImg(name of text slot, content of text);
+                showImg("img_slot1","slugtrail-colleges and departments/Oakes/foundation/1-OakesFoundation.JPG");
+		showTxt("txt_slot1","Begin at the oakes bus stop.");
+		showImg("img_slot2","slugtrail-colleges and departments/Oakes/foundation/2-OakesFoundation.jpg");
+		showTxt("txt_slot2","Facing the bus stop, turn right and continue forward until you reach the corner of the street. Then make a left.");
+		showImg("img_slot3","slugtrail-colleges and departments/Oakes/foundation/3-OakesFoundation.jpg");
+                showTxt("txt_slot3","Continue past the parking lot, on the sidewalk.");
+                showImg("img_slot4","slugtrail-colleges and departments/Oakes/foundation/4-OakesFoundation.jpg");
+                showTxt("txt_slot4","Continue along the curve of the road.");
+                showImg("img_slot5","slugtrail-colleges and departments/Oakes/foundation/5-OakesFoundation.jpg");
+                showTxt("txt_slot5","Head towards the white buildings (Carson housing) ahead, but stay on the street.");
+                showImg("img_slot6","slugtrail-colleges and departments/Oakes/foundation/6-OakesFoundation.jpg");
+                showTxt("txt_slot6","When you reach a fork in the road, take the path that leads down to the right towards the Oakes Circle.");
+                
+                showImg("img_slot7","slugtrail-colleges and departments/Oakes/oakes learning center/1-OakesLearningCenter.jpg");
+                showTxt("txt_slot7","Walk past the Oakes College sign and head right into the college.");
+                showImg("img_slot8","slugtrail-colleges and departments/Oakes/oakes learning center/2-OakesLearningCenter.jpg");
+                showTxt("txt_slot8","Go past the bike racks and into the grassy area.");
+                showImg("img_slot9","slugtrail-colleges and departments/Oakes/oakes learning center/3-OakesLearningCenter.jpg");
+                showTxt("txt_slot9","Follow the sidewalk around the grassy area into the brown building. Do not go down the stairs.");
+                showImg("img_slot10","slugtrail-colleges and departments/Oakes/oakes learning center/4-OakesLearningCenter.jpg");
+                showTxt("txt_slot10","Head towards the middle set of doors");
+                showImg("img_slot11","slugtrail-colleges and departments/Oakes/oakes learning center/5-OakesLearningCenter.JPG");
+                showTxt("txt_slot11","Voila!");
+	
+	function showSet2(){
+                showImg("img_slot1","slugtrail-colleges and departments/Oakes/foundation/1-OakesFoundation.JPG");
+		showTxt("txt_slot1","Begin at the oakes bus stop.");
+		showImg("img_slot2","slugtrail-colleges and departments/Oakes/foundation/2-OakesFoundation.jpg");
+		showTxt("txt_slot2","Facing the bus stop, turn right and continue forward until you reach the corner of the street. Then make a left.");
+		showImg("img_slot3","slugtrail-colleges and departments/Oakes/foundation/3-OakesFoundation.jpg");
+                showTxt("txt_slot3","Continue past the parking lot, on the sidewalk.");
+                showImg("img_slot4","slugtrail-colleges and departments/Oakes/foundation/4-OakesFoundation.jpg");
+                showTxt("txt_slot4","Continue along the curve of the road.");
+                showImg("img_slot5","slugtrail-colleges and departments/Oakes/foundation/5-OakesFoundation.jpg");
+                showTxt("txt_slot5","Head towards the white buildings (Carson housing) ahead, but stay on the street.");
+                showImg("img_slot6","slugtrail-colleges and departments/Oakes/foundation/6-OakesFoundation.jpg");
+                showTxt("txt_slot6","When you reach a fork in the road, take the path that leads down to the right towards the Oakes Circle.");
+                
+                showImg("img_slot7","slugtrail-colleges and departments/Oakes/Oakes 101,102/1-Oakes101,102.jpg");
+                showTxt("txt_slot7","Walk past the Oakes College sign and head left into the college.");
+                showImg("img_slot8","slugtrail-colleges and departments/Oakes/Oakes 101,102/2-Oakes101,102.jpg");
+                showTxt("txt_slot8","Walk along the perimeter of the building, making a right after reaching the college offices. The classrooms are on your left.");
+                showImg("img_slot9","slugtrail-colleges and departments/Oakes/Oakes 101,102/3-Oakes101,102.JPG");
+                showTxt("txt_slot9","Voila!");
+	}
+	
+	function showSet3(){
+                showImg("img_slot1","slugtrail-colleges and departments/Oakes/foundation/1-OakesFoundation.JPG");
+		showTxt("txt_slot1","Begin at the oakes bus stop.");
+		showImg("img_slot2","slugtrail-colleges and departments/Oakes/foundation/2-OakesFoundation.jpg");
+		showTxt("txt_slot2","Facing the bus stop, turn right and continue forward until you reach the corner of the street. Then make a left.");
+		showImg("img_slot3","slugtrail-colleges and departments/Oakes/foundation/3-OakesFoundation.jpg");
+                showTxt("txt_slot3","Continue past the parking lot, on the sidewalk.");
+                showImg("img_slot4","slugtrail-colleges and departments/Oakes/foundation/4-OakesFoundation.jpg");
+                showTxt("txt_slot4","Continue along the curve of the road.");
+                showImg("img_slot5","slugtrail-colleges and departments/Oakes/foundation/5-OakesFoundation.jpg");
+                showTxt("txt_slot5","Head towards the white buildings (Carson housing) ahead, but stay on the street.");
+                showImg("img_slot6","slugtrail-colleges and departments/Oakes/foundation/6-OakesFoundation.jpg");
+                showTxt("txt_slot6","When you reach a fork in the road, take the path that leads down to the right towards the Oakes Circle.");
+                
+                showImg("img_slot7","slugtrail-colleges and departments/Oakes/Oakes 103,104/1-Oakes103,104.jpg");
+                showTxt("txt_slot7","Walk past the Oakes College sign and head left into the college.");
+                showImg("img_slot8","slugtrail-colleges and departments/Oakes/Oakes 103,104/2-Oakes103,104.jpg");
+                showTxt("txt_slot8","Walk along the perimeter of the building, making a right after reaching the college offices. Continue along the hallway past 101 and 102.");
+                showImg("img_slot9","slugtrail-colleges and departments/Oakes/Oakes 103,104/3-Oakes103,104.jpg");
+                showTxt("txt_slot9","Make a left after the bulletin board.");
+                showImg("img_slot10","slugtrail-colleges and departments/Oakes/Oakes 103,104/4-Oakes103,104.jpg");
+                showTxt("txt_slot10","Voila!");
+	}
+	
+        function showSet4(){
+                showImg("img_slot1","slugtrail-colleges and departments/Oakes/foundation/1-OakesFoundation.JPG");
+		showTxt("txt_slot1","Begin at the oakes bus stop.");
+		showImg("img_slot2","slugtrail-colleges and departments/Oakes/foundation/2-OakesFoundation.jpg");
+		showTxt("txt_slot2","Facing the bus stop, turn right and continue forward until you reach the corner of the street. Then make a left.");
+		showImg("img_slot3","slugtrail-colleges and departments/Oakes/foundation/3-OakesFoundation.jpg");
+                showTxt("txt_slot3","Continue past the parking lot, on the sidewalk.");
+                showImg("img_slot4","slugtrail-colleges and departments/Oakes/foundation/4-OakesFoundation.jpg");
+                showTxt("txt_slot4","Continue along the curve of the road.");
+                showImg("img_slot5","slugtrail-colleges and departments/Oakes/foundation/5-OakesFoundation.jpg");
+                showTxt("txt_slot5","Head towards the white buildings (Carson housing) ahead, but stay on the street.");
+                showImg("img_slot6","slugtrail-colleges and departments/Oakes/foundation/6-OakesFoundation.jpg");
+                showTxt("txt_slot6","When you reach a fork in the road, take the path that leads down to the right towards the Oakes Circle.");
+                
+                showImg("img_slot7","slugtrail-colleges and departments/Oakes/Oakes 105,106/1-Oakes105,106.jpg");
+                showTxt("txt_slot7","Walk past the Oakes College sign and head left into the college.");
+                showImg("img_slot8","slugtrail-colleges and departments/Oakes/Oakes 105,106/2-Oakes105,106.jpg");
+                showTxt("txt_slot8","Walk along the perimeter of the building, making a right after reaching the college offices. Continue along the hallway past 101 and 102.");
+                showImg("img_slot9","slugtrail-colleges and departments/Oakes/Oakes 105,106/3-Oakes105,106.jpg");
+                showTxt("txt_slot9","Continue past the bulletin board. Make a left at the end of the hallway.");
+                showImg("img_slot10","slugtrail-colleges and departments/Oakes/Oakes 105,106/4-Oakes105,106.jpg");
+                showTxt("txt_slot10","Make a right past the drinking fountain. 105 is on your left. 106 is on your right after the elevator.");
+                showImg("img_slot11","slugtrail-colleges and departments/Oakes/Oakes 105,106/5-Oakes105,106.JPG");
+                showTxt("txt_slot11","105. Voila!");
+                showImg("img_slot12","slugtrail-colleges and departments/Oakes/Oakes 105,106/6-Oakes105,106.JPG");
+                showTxt("txt_slot12","106. Voila!");                
+               
+                cleanSlot("img_slot13");
+                cleanSlot("txt_slot13");
+	}
+        
+        function showSet5(){
+                showImg("img_slot1","slugtrail-colleges and departments/Oakes/foundation/1-OakesFoundation.JPG");
+		showTxt("txt_slot1","Begin at the oakes bus stop.");
+		showImg("img_slot2","slugtrail-colleges and departments/Oakes/foundation/2-OakesFoundation.jpg");
+		showTxt("txt_slot2","Facing the bus stop, turn right and continue forward until you reach the corner of the street. Then make a left.");
+		showImg("img_slot3","slugtrail-colleges and departments/Oakes/foundation/3-OakesFoundation.jpg");
+                showTxt("txt_slot3","Continue past the parking lot, on the sidewalk.");
+                showImg("img_slot4","slugtrail-colleges and departments/Oakes/foundation/4-OakesFoundation.jpg");
+                showTxt("txt_slot4","Continue along the curve of the road.");
+                showImg("img_slot5","slugtrail-colleges and departments/Oakes/foundation/5-OakesFoundation.jpg");
+                showTxt("txt_slot5","Head towards the white buildings (Carson housing) ahead, but stay on the street.");
+                showImg("img_slot6","slugtrail-colleges and departments/Oakes/foundation/6-OakesFoundation.jpg");
+                showTxt("txt_slot6","When you reach a fork in the road, take the path that leads down to the right towards the Oakes Circle.");
+                
+                showImg("img_slot7","slugtrail-colleges and departments/Oakes/Oakes 108,109,111/1-Oakes108,109,111.jpg");
+                showTxt("txt_slot7","Walk past the Oakes College sign and head left into the college.");
+                showImg("img_slot8","slugtrail-colleges and departments/Oakes/Oakes 108,109,111/2-Oakes108,109,111.jpg");
+                showTxt("txt_slot8","Walk along the perimeter of the building, making a right after reaching the college offices. Continue along the hallway past 101 and 102.");
+                showImg("img_slot9","slugtrail-colleges and departments/Oakes/Oakes 108,109,111/3-Oakes108,109,111.jpg");
+                showTxt("txt_slot9","Continue past the bulletin board. Make a left at the end of the hallway.");
+                showImg("img_slot10","slugtrail-colleges and departments/Oakes/Oakes 108,109,111/4-Oakes108,109,111.jpg");
+                showTxt("txt_slot10","Make a right past the drinking fountain. Walk past room 105.");
+                showImg("img_slot11","slugtrail-colleges and departments/Oakes/Oakes 108,109,111/5-Oakes108,109,111.jpg");
+                showTxt("txt_slot11","At the end of the walkway, turn left into the classrooms.");
+                showImg("img_slot12","slugtrail-colleges and departments/Oakes/Oakes 108,109,111/6-Oakes108,109,111.JPG");
+                showTxt("txt_slot12","Voila!");
+                
+                cleanSlot("img_slot13");
+                cleanSlot("txt_slot13");
+	}
+        
+        function showSet6(){
+                showImg("img_slot1","slugtrail-colleges and departments/Oakes/foundation/1-OakesFoundation.JPG");
+		showTxt("txt_slot1","Begin at the oakes bus stop.");
+		showImg("img_slot2","slugtrail-colleges and departments/Oakes/foundation/2-OakesFoundation.jpg");
+		showTxt("txt_slot2","Facing the bus stop, turn right and continue forward until you reach the corner of the street. Then make a left.");
+		showImg("img_slot3","slugtrail-colleges and departments/Oakes/foundation/3-OakesFoundation.jpg");
+                showTxt("txt_slot3","Continue past the parking lot, on the sidewalk.");
+                showImg("img_slot4","slugtrail-colleges and departments/Oakes/foundation/4-OakesFoundation.jpg");
+                showTxt("txt_slot4","Continue along the curve of the road.");
+                showImg("img_slot5","slugtrail-colleges and departments/Oakes/foundation/5-OakesFoundation.jpg");
+                showTxt("txt_slot5","Head towards the white buildings (Carson housing) ahead, but stay on the street.");
+                showImg("img_slot6","slugtrail-colleges and departments/Oakes/foundation/6-OakesFoundation.jpg");
+                showTxt("txt_slot6","When you reach a fork in the road, take the path that leads down to the right towards the Oakes Circle.");
+                
+                showImg("img_slot7","slugtrail-colleges and departments/Oakes/upper classrooms/1-upperclassrooms.jpg");
+                showTxt("txt_slot7","Walk past the Oakes College sign and head left into the college.");
+                showImg("img_slot8","slugtrail-colleges and departments/Oakes/upper classrooms/2-upperclassrooms.jpg");
+                showTxt("txt_slot8","Walk along the perimeter of the building, making a right after reaching the college offices. Continue along the hallway past 101 and 102.");
+                showImg("img_slot9","slugtrail-colleges and departments/Oakes/upper classrooms/3-upperclassrooms.jpg");
+                showTxt("txt_slot9","Continue past the bulletin board. Make a left at the end of the hallway.");
+                showImg("img_slot10","slugtrail-colleges and departments/Oakes/upper classrooms/4-upperclassrooms.jpg");
+                showTxt("txt_slot10","Make a right past the drinking fountain. Walk past room 105.");
+                showImg("img_slot11","slugtrail-colleges and departments/Oakes/upper classrooms/5-upperclassrooms.jpg");
+                showTxt("txt_slot11","At the end of the walkway, turn right.");
+                showImg("img_slot12","slugtrail-colleges and departments/Oakes/upper classrooms/6-upperclassrooms.jpg");
+                showtxt("txt_slot12","Go up the stairs.");
+                showImg("img_slot13","slugtrail-colleges and departments/Oakes/upper classrooms/7-upperclassrooms.jpg");
+                showTxt("txt_slot13","At the top of the stairs, immediately to the right are classrooms 221 and 299. At the end of the upstairs hall are 220, 222, 224. Voila!");
+                showImg("img_slot14","slugtrail-colleges and departments/Oakes/upper classrooms/8-upperclassrooms.JPG");
+                showTxt("txt_slot14","At the top of the stairs, immediately to the right are classrooms 221 and 299. Voila!");
+                showImg("img_slot15","slugtrail-colleges and departments/Oakes/upper classrooms/9-upperclassrooms.JPG");
+                showTxt("txt_slot15","At the end of the upstairs hall are 220, 222, 224. Voila!");
+	}
+        
+	function showImg(slot_num, src){
+		var img = document.createElement("img");
+		var snum = slot_num;
+		img.src = src;
+		document.getElementById(slot_num).src=img.src;
+	}
+	
+	function showTxt(slot_num, text){
+		var p = document.createElement("p");
+		var snum = slot_num;
+		//var th_content = text;
+		document.getElementById(slot_num).innerHTML = text;
+	}
+
+       
+	if($.mobile.media("screen and (max-device-width: 480px)")) {
+		// Change viewport for smaller devices
+		$('meta[name=viewport]').attr('content','width=device-width, initial-scale=1');
+	}
+        
+        //remove content of a slot
+        function cleanSlot(slot_name) {
+            document.getElementById(slot_name).innerHTML = "";
+            document.getElementById(slot_name).src = "";
+        }
+       </script>
+   
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="view2/view2.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>
+
