@@ -1,15 +1,16 @@
+<html>
 <head>
-  <link ref="stylesheet" href="index.css" type="text/css" />
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>SlugTrail</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
-  <link rel="stylesheet" href="app.css">
-  <link rel="stylesheet" href="stupid.css" type="text/css" />  
-  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+	<link ref="stylesheet" href="index.css" type="text/css" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SlugTrail</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+	<link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+	<!--link rel="stylesheet" href="app.css">
+	<link rel="stylesheet" href="stupid.css" type="text/css" />  
+	<script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script-->
 </head>
 <body>
     <div class="header">
@@ -27,26 +28,77 @@
         </div> 
     </div> 
     
-    <table class="center" id="demo">
-    </table>
+    <table class="center" id="demo"></table>
     
-   <div ng-view></div>
+    <div ng-view></div>
 
     <script>
+	//the current room selection
+	var room_select = null;
 	
+	//function which select the rooms
+	function showSet1(){
+	    room_select = "OLC";
+	    loadXMLDoc();
+	}
+	
+	//https://www.w3schools.com/xml/tryit.asp?filename=tryxml_display_table
+	//XML function, get actual data from XML database
+	function loadXMLDoc() {
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				getDataSet(this);
+			}
+		};
+		xmlhttp.open("GET", "db_oakes.xml", true);//get data from database
+		xmlhttp.send();
+	}
+	
+	//get a specific set of data from database
+	function getDataSet(xml) {
+		var i;
+		var xmlDoc = xml.responseXML;
+		var table="<tr><th>Image</th><th>Discription</th></tr>";
+		var x = xmlDoc.getElementsByTagName(roomnum);
+		for (i = 0; i <x.length; i++) { 
+			table += "<tr><td><img src=" +
+			x[i].getElementsByTagName("IMGSRC")[0].childNodes[0].nodeValue +
+			"></img></td><td>" +
+			x[i].getElementsByTagName("DSCPT")[0].childNodes[0].nodeValue +
+			"</td></tr>";
+		}
+		document.getElementById("demo").innerHTML = table;
+	}
+	
+	//get a specific set of data from database
+	function getDataSet(xml) {
+		var i;
+		var xmlDoc = xml.responseXML;
+		var table="<tr><th>Image</th><th>Discription</th></tr>";
+		var x = xmlDoc.getElementsByTagName(roomnum);
+		for (i = 0; i <x.length; i++) { 
+			table += "<tr><td><img src=" +
+			x[i].getElementsByTagName("IMGSRC")[0].childNodes[0].nodeValue +
+			"></img></td><td>" +
+			x[i].getElementsByTagName("DSCPT")[0].childNodes[0].nodeValue +
+			"</td></tr>";
+		}
+		document.getElementById("demo").innerHTML = table;
+	}
+	
+	function showMap(slot_num, src){
+		var img = document.createElement("img");
+		var snum = slot_num;
+		img.src = src;
+		var el = document.getElementById(slot_num);
+		el.style.position = "fixed";
+		el.style.top = 0;
+		el.style.right = 0;
+		el.src = img.src;
+	}
         
-        function showMap(slot_num, src){
-            var img = document.createElement("img");
-            var snum = slot_num;
-            img.src = src;
-            var el = document.getElementById(slot_num);
-            el.style.position = "fixed";
-            el.style.top = 0;
-            el.style.right = 0;
-            el.src = img.src;
-        }
-        
-	function showImg(slot_num, src){
+	/*function showImg(slot_num, src){
 		var img = document.createElement("img");
 		var snum = slot_num;
 		img.src = src;
@@ -58,32 +110,36 @@
 		var snum = slot_num;
 		//var th_content = text;
 		document.getElementById(slot_num).innerHTML = text;
-	}
+	}*/
 
-       
+       //mobile view
 	if($.mobile.media("screen and (max-device-width: 480px)")) {
 		// Change viewport for smaller devices
 		$('meta[name=viewport]').attr('content','width=device-width, initial-scale=1');
 	}
         
         //remove content of a slot
-        function cleanSlot(slot_name) {
+        /*function cleanSlot(slot_name) {
             document.getElementById(slot_name).innerHTML = "";
             document.getElementById(slot_name).src = "";
-        }
+        }*/
+	    
+	
+	
+	
        </script>
    
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="app.js"></script>
-  <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
-  <script src="components/version/version.js"></script>
-  <script src="components/version/version-directive.js"></script>
-  <script src="components/version/interpolate-filter.js"></script>
+	<!-- In production use:
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+	-->
+	<!--script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="app.js"></script>
+	<script src="view1/view1.js"></script>
+	<script src="view2/view2.js"></script>
+	<script src="components/version/version.js"></script>
+	<script src="components/version/version-directive.js"></script>
+	<script src="components/version/interpolate-filter.js"></script-->
 </body>
 </html>
 
