@@ -1,6 +1,6 @@
 <root>
 <!--//showImg(name of image slot, image src);
-//<IMGSRC>1","https://lh3.googleusercontent.com/8LKhF9LpK6xKpar244kqQFGLD6Y11bp40rf1LWh-4t02b7V8jrqrAtodZLSUKq0bhYseO-Lum8WEww=w1366-h599-rw</DSCPT>
+//<IMGSRC>1https://lh3.googleusercontent.com/8LKhF9LpK6xKpar244kqQFGLD6Y11bp40rf1LWh-4t02b7V8jrqrAtodZLSUKq0bhYseO-Lum8WEww=w1366-h599-rw</DSCPT>
 //showImg(name of text slot, content of text);-->
 
 <!-- LIST OF ALL SETS-->
@@ -66,40 +66,40 @@
         <MAP>showMap("img_slot1", "slugtrail-colleges and departments/Oakes/Oakes 101,102/map101,102.</MAP>
     </R101>
     <R101>
-        <IMGSRC>1","slugtrail-colleges and departments/Oakes/foundation/1-OakesFoundation.JPG</DSCPT>
-        <DSCPT>1","Begin at the oakes bus stop.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/1-OakesFoundation.JPG</DSCPT>
+        <DSCPT>Begin at the oakes bus stop.</DSCPT>
     </R101>
     <R101>
-        <IMGSRC>2","slugtrail-colleges and departments/Oakes/foundation/2-OakesFoundation.</IMGSRC>
-        <DSCPT>2","Facing the bus stop, turn right and continue forward until you reach the corner of the street. Then make a left.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/2-OakesFoundation.</IMGSRC>
+        <DSCPT>Facing the bus stop, turn right and continue forward until you reach the corner of the street. Then make a left.</DSCPT>
     </R101>
     <R101>
-        <IMGSRC>3","slugtrail-colleges and departments/Oakes/foundation/3-OakesFoundation.</IMGSRC>
-        <DSCPT>3","Continue past the parking lot, on the sidewalk.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/3-OakesFoundation.</IMGSRC>
+        <DSCPT>Continue past the parking lot, on the sidewalk.</DSCPT>
     </R101>
     <R101>
-        <IMGSRC>4","slugtrail-colleges and departments/Oakes/foundation/4-OakesFoundation.</IMGSRC>
-        <DSCPT>4","Continue along the curve of the road.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/4-OakesFoundation.</IMGSRC>
+        <DSCPT>Continue along the curve of the road.</DSCPT>
     </R101>
     <R101>
-        <IMGSRC>5","slugtrail-colleges and departments/Oakes/foundation/5-OakesFoundation.</IMGSRC>
-        <DSCPT>5","Head towards the white buildings (Carson housing) ahead, but stay on the street.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/5-OakesFoundation.</IMGSRC>
+        <DSCPT>Head towards the white buildings (Carson housing) ahead, but stay on the street.</DSCPT>
     </R101>
     <R101>
-        <IMGSRC>6","slugtrail-colleges and departments/Oakes/foundation/6-OakesFoundation.</IMGSRC>
-        <DSCPT>6","When you reach a fork in the road, take the path that leads down to the right towards the Oakes Circle.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/6-OakesFoundation.</IMGSRC>
+        <DSCPT>When you reach a fork in the road, take the path that leads down to the right towards the Oakes Circle.</DSCPT>
     </R101>
     <R101>
-        <IMGSRC>7","slugtrail-colleges and departments/Oakes/Oakes 101,102/1-Oakes101,102.</IMGSRC>
-        <DSCPT>7","Walk past the Oakes College sign and head left into the college.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/Oakes 101,102/1-Oakes101,102.</IMGSRC>
+        <DSCPT>Walk past the Oakes College sign and head left into the college.</DSCPT>
     </R101>
     <R101>
-        <IMGSRC>8","slugtrail-colleges and departments/Oakes/Oakes 101,102/2-Oakes101,102.</IMGSRC>
-        <DSCPT>8","Walk along the perimeter of the building, making a right after reaching the college offices. The classrooms are on your left.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/Oakes 101,102/2-Oakes101,102.</IMGSRC>
+        <DSCPT>Walk along the perimeter of the building, making a right after reaching the college offices. The classrooms are on your left.</DSCPT>
     </R101>
     <R101>
-        <IMGSRC>9","slugtrail-colleges and departments/Oakes/Oakes 101,102/3-Oakes101,102.JPG</DSCPT>
-        <DSCPT>9","Voila!</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/Oakes 101,102/3-Oakes101,102.JPG</DSCPT>
+        <DSCPT>Voila!</DSCPT>
     </R101>
 
     <!-- R103: oakes 103 104-->
@@ -107,44 +107,44 @@
         <MAP>showMap("img_slot1", "slugtrail-colleges and departments/Oakes/Oakes 103,104/mapOakes103,104.</MAP>        
     </R103>
     <R103>
-        <IMGSRC>1","slugtrail-colleges and departments/Oakes/foundation/1-OakesFoundation.JPG</DSCPT>
-        <DSCPT>1","Begin at the oakes bus stop.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/1-OakesFoundation.JPG</DSCPT>
+        <DSCPT>Begin at the oakes bus stop.</DSCPT>
     </R103>
     <R103>
-        <IMGSRC>2","slugtrail-colleges and departments/Oakes/foundation/2-OakesFoundation.</IMGSRC>
-        <DSCPT>2","Facing the bus stop, turn right and continue forward until you reach the corner of the street. Then make a left.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/2-OakesFoundation.</IMGSRC>
+        <DSCPT>Facing the bus stop, turn right and continue forward until you reach the corner of the street. Then make a left.</DSCPT>
     </R103>
     <R103>
-        <IMGSRC>3","slugtrail-colleges and departments/Oakes/foundation/3-OakesFoundation.</IMGSRC>
-        <DSCPT>3","Continue past the parking lot, on the sidewalk.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/3-OakesFoundation.</IMGSRC>
+        <DSCPT>Continue past the parking lot, on the sidewalk.</DSCPT>
     </R103>
     <R103>
-        <IMGSRC>4","slugtrail-colleges and departments/Oakes/foundation/4-OakesFoundation.</IMGSRC>
-        <DSCPT>4","Continue along the curve of the road.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/4-OakesFoundation.</IMGSRC>
+        <DSCPT>Continue along the curve of the road.</DSCPT>
     </R103>
     <R103>
-        <IMGSRC>5","slugtrail-colleges and departments/Oakes/foundation/5-OakesFoundation.</IMGSRC>
-        <DSCPT>5","Head towards the white buildings (Carson housing) ahead, but stay on the street.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/5-OakesFoundation.</IMGSRC>
+        <DSCPT>Head towards the white buildings (Carson housing) ahead, but stay on the street.</DSCPT>
     </R103>
     <R103>
-        <IMGSRC>6","slugtrail-colleges and departments/Oakes/foundation/6-OakesFoundation.</IMGSRC>
-        <DSCPT>6","When you reach a fork in the road, take the path that leads down to the right towards the Oakes Circle.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/6-OakesFoundation.</IMGSRC>
+        <DSCPT>When you reach a fork in the road, take the path that leads down to the right towards the Oakes Circle.</DSCPT>
     </R103>
     <R103>
-        <IMGSRC>7","slugtrail-colleges and departments/Oakes/Oakes 103,104/1-Oakes103,104.</IMGSRC>
-        <DSCPT>7","Walk past the Oakes College sign and head left into the college.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/Oakes 103,104/1-Oakes103,104.</IMGSRC>
+        <DSCPT>Walk past the Oakes College sign and head left into the college.</DSCPT>
     </R103>
     <R103>
-        <IMGSRC>8","slugtrail-colleges and departments/Oakes/Oakes 103,104/2-Oakes103,104.</IMGSRC>
-        <DSCPT>8","Walk along the perimeter of the building, making a right after reaching the college offices. Continue along the hallway past 101 and 102.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/Oakes 103,104/2-Oakes103,104.</IMGSRC>
+        <DSCPT>Walk along the perimeter of the building, making a right after reaching the college offices. Continue along the hallway past 101 and 102.</DSCPT>
     </R103>
     <R103>
-        <IMGSRC>9","slugtrail-colleges and departments/Oakes/Oakes 103,104/3-Oakes103,104.</IMGSRC>
-        <DSCPT>9","Make a left after the bulletin board.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/Oakes 103,104/3-Oakes103,104.</IMGSRC>
+        <DSCPT>Make a left after the bulletin board.</DSCPT>
     </R103>
     <R103>
-        <IMGSRC>10","slugtrail-colleges and departments/Oakes/Oakes 103,104/4-Oakes103,104.</IMGSRC>
-        <DSCPT>10","Voila!</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/Oakes 103,104/4-Oakes103,104.</IMGSRC>
+        <DSCPT>Voila!</DSCPT>
     </R103>
 
     <!--R105: oakes 105 106-->
@@ -152,53 +152,52 @@
         <MAP>showMap("img_slot1", "slugtrail-colleges and departments/Oakes/Oakes 105,106/105, 106.</MAP>
     </R105>
     <R105>
-        <IMGSRC>1","slugtrail-colleges and departments/Oakes/foundation/1-OakesFoundation.JPG</DSCPT>
-        <DSCPT>1","Begin at the oakes bus stop.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/1-OakesFoundation.JPG</DSCPT>
+        <DSCPT>Begin at the oakes bus stop.</DSCPT>
     </R105>
     <R105>
-        <IMGSRC>2","slugtrail-colleges and departments/Oakes/foundation/2-OakesFoundation.</IMGSRC>
-        <DSCPT>2","Facing the bus stop, turn right and continue forward until you reach the corner of the street. Then make a left.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/2-OakesFoundation.</IMGSRC>
+        <DSCPT>Facing the bus stop, turn right and continue forward until you reach the corner of the street. Then make a left.</DSCPT>
     </R105>
     <R105>
-        <IMGSRC>3","slugtrail-colleges and departments/Oakes/foundation/3-OakesFoundation.</IMGSRC>
-        <DSCPT>3","Continue past the parking lot, on the sidewalk.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/3-OakesFoundation.</IMGSRC>
+        <DSCPT>Continue past the parking lot, on the sidewalk.</DSCPT>
     </R105>
     <R105>
-        <IMGSRC>4","slugtrail-colleges and departments/Oakes/foundation/4-OakesFoundation.</IMGSRC>
-        <DSCPT>4","Continue along the curve of the road.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/4-OakesFoundation.</IMGSRC>
+        <DSCPT>Continue along the curve of the road.</DSCPT>
     </R105>
     <R105>
-        <IMGSRC>5","slugtrail-colleges and departments/Oakes/foundation/5-OakesFoundation.</IMGSRC>
-        <DSCPT>5","Head towards the white buildings (Carson housing) ahead, but stay on the street.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/5-OakesFoundation.</IMGSRC>
+        <DSCPT>Head towards the white buildings (Carson housing) ahead, but stay on the street.</DSCPT>
     </R105>
     <R105>
-        <IMGSRC>6","slugtrail-colleges and departments/Oakes/foundation/6-OakesFoundation.</IMGSRC>
-        <DSCPT>6","When you reach a fork in the road, take the path that leads down to the right towards the Oakes Circle.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/6-OakesFoundation.</IMGSRC>
+        <DSCPT>When you reach a fork in the road, take the path that leads down to the right towards the Oakes Circle.</DSCPT>
     </R105>
     <R105>
-        
-        <IMGSRC>7","slugtrail-colleges and departments/Oakes/Oakes 105,106/1-Oakes105,106.</IMGSRC>
-        <DSCPT>7","Walk past the Oakes College sign and head left into the college.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/Oakes 105,106/1-Oakes105,106.</IMGSRC>
+        <DSCPT>Walk past the Oakes College sign and head left into the college.</DSCPT>
     </R105>
     <R105>
-        <IMGSRC>8","slugtrail-colleges and departments/Oakes/Oakes 105,106/2-Oakes105,106.</IMGSRC>
-        <DSCPT>8","Walk along the perimeter of the building, making a right after reaching the college offices. Continue along the hallway past 101 and 102.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/Oakes 105,106/2-Oakes105,106.</IMGSRC>
+        <DSCPT>Walk along the perimeter of the building, making a right after reaching the college offices. Continue along the hallway past 101 and 102.</DSCPT>
     </R105>
     <R105>
-        <IMGSRC>9","slugtrail-colleges and departments/Oakes/Oakes 105,106/3-Oakes105,106.</IMGSRC>
-        <DSCPT>9","Continue past the bulletin board. Make a left at the end of the hallway.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/Oakes 105,106/3-Oakes105,106.</IMGSRC>
+        <DSCPT>Continue past the bulletin board. Make a left at the end of the hallway.</DSCPT>
     </R105>
     <R105>
-        <IMGSRC>10","slugtrail-colleges and departments/Oakes/Oakes 105,106/4-Oakes105,106.</IMGSRC>
-        <DSCPT>10","Make a right past the drinking fountain. 105 is on your left. 106 is on your right after the elevator.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/Oakes 105,106/4-Oakes105,106.</IMGSRC>
+        <DSCPT>Make a right past the drinking fountain. 105 is on your left. 106 is on your right after the elevator.</DSCPT>
     </R105>
     <R105>
-        <IMGSRC>11","slugtrail-colleges and departments/Oakes/Oakes 105,106/5-Oakes105,106.JPG</DSCPT>
-        <DSCPT>11","105. Voila!</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/Oakes 105,106/5-Oakes105,106.JPG</DSCPT>
+        <DSCPT>105. Voila!</DSCPT>
     </R105>
     <R105>
-        <IMGSRC>12","slugtrail-colleges and departments/Oakes/Oakes 105,106/6-Oakes105,106.JPG</DSCPT>
-        <DSCPT>12","106. Voila!</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/Oakes 105,106/6-Oakes105,106.JPG</DSCPT>
+        <DSCPT>106. Voila!</DSCPT>
     </R105>
 
 
@@ -207,52 +206,52 @@
         <MAP>showMap("img_slot1", "slugtrail-colleges and departments/Oakes/Oakes 108,109,111/108, 109, 111.</MAP>
     </R108>
     <R108>
-        <IMGSRC>1","slugtrail-colleges and departments/Oakes/foundation/1-OakesFoundation.JPG</DSCPT>
-        <DSCPT>1","Begin at the oakes bus stop.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/1-OakesFoundation.JPG</DSCPT>
+        <DSCPT>Begin at the oakes bus stop.</DSCPT>
     </R108>
     <R108>
-        <IMGSRC>2","slugtrail-colleges and departments/Oakes/foundation/2-OakesFoundation.</IMGSRC>
-        <DSCPT>2","Facing the bus stop, turn right and continue forward until you reach the corner of the street. Then make a left.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/2-OakesFoundation.</IMGSRC>
+        <DSCPT>Facing the bus stop, turn right and continue forward until you reach the corner of the street. Then make a left.</DSCPT>
     </R108>
     <R108>
-        <IMGSRC>3","slugtrail-colleges and departments/Oakes/foundation/3-OakesFoundation.</IMGSRC>
-        <DSCPT>3","Continue past the parking lot, on the sidewalk.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/3-OakesFoundation.</IMGSRC>
+        <DSCPT>Continue past the parking lot, on the sidewalk.</DSCPT>
     </R108>
     <R108>
-        <IMGSRC>4","slugtrail-colleges and departments/Oakes/foundation/4-OakesFoundation.</IMGSRC>
-        <DSCPT>4","Continue along the curve of the road.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/4-OakesFoundation.</IMGSRC>
+        <DSCPT>Continue along the curve of the road.</DSCPT>
     </R108>
     <R108>
-        <IMGSRC>5","slugtrail-colleges and departments/Oakes/foundation/5-OakesFoundation.</IMGSRC>
-        <DSCPT>5","Head towards the white buildings (Carson housing) ahead, but stay on the street.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/5-OakesFoundation.</IMGSRC>
+        <DSCPT>Head towards the white buildings (Carson housing) ahead, but stay on the street.</DSCPT>
     </R108>
     <R108>
-        <IMGSRC>6","slugtrail-colleges and departments/Oakes/foundation/6-OakesFoundation.</IMGSRC>
-        <DSCPT>6","When you reach a fork in the road, take the path that leads down to the right towards the Oakes Circle.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/6-OakesFoundation.</IMGSRC>
+        <DSCPT>When you reach a fork in the road, take the path that leads down to the right towards the Oakes Circle.</DSCPT>
     </R108>
     <R108>
-        <IMGSRC>7","slugtrail-colleges and departments/Oakes/Oakes 108,109,111/1-Oakes108,109,111.</IMGSRC>
-        <DSCPT>7","Walk past the Oakes College sign and head left into the college.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/Oakes 108,109,111/1-Oakes108,109,111.</IMGSRC>
+        <DSCPT>Walk past the Oakes College sign and head left into the college.</DSCPT>
     </R108>
     <R108>
-        <IMGSRC>8","slugtrail-colleges and departments/Oakes/Oakes 108,109,111/2-Oakes108,109,111.</IMGSRC>
-        <DSCPT>8","Walk along the perimeter of the building, making a right after reaching the college offices. Continue along the hallway past 101 and 102.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/Oakes 108,109,111/2-Oakes108,109,111.</IMGSRC>
+        <DSCPT>Walk along the perimeter of the building, making a right after reaching the college offices. Continue along the hallway past 101 and 102.</DSCPT>
     </R108>
     <R108>
-        <IMGSRC>9","slugtrail-colleges and departments/Oakes/Oakes 108,109,111/3-Oakes108,109,111.</IMGSRC>
-        <DSCPT>9","Continue past the bulletin board. Make a left at the end of the hallway.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/Oakes 108,109,111/3-Oakes108,109,111.</IMGSRC>
+        <DSCPT>Continue past the bulletin board. Make a left at the end of the hallway.</DSCPT>
     </R108>
     <R108>
-        <IMGSRC>10","slugtrail-colleges and departments/Oakes/Oakes 108,109,111/4-Oakes108,109,111.</IMGSRC>
-        <DSCPT>10","Make a right past the drinking fountain. Walk past room 105.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/Oakes 108,109,111/4-Oakes108,109,111.</IMGSRC>
+        <DSCPT>Make a right past the drinking fountain. Walk past room 105.</DSCPT>
     </R108>
     <R108>
-        <IMGSRC>11","slugtrail-colleges and departments/Oakes/Oakes 108,109,111/5-Oakes108,109,111.</IMGSRC>
-        <DSCPT>11","At the end of the walkway, turn left into the classrooms.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/Oakes 108,109,111/5-Oakes108,109,111.</IMGSRC>
+        <DSCPT>At the end of the walkway, turn left into the classrooms.</DSCPT>
     </R108>
     <R108>
-        <IMGSRC>12","slugtrail-colleges and departments/Oakes/Oakes 108,109,111/6-Oakes108,109,111.JPG</DSCPT>
-        <DSCPT>12","Voila!</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/Oakes 108,109,111/6-Oakes108,109,111.JPG</DSCPT>
+        <DSCPT>Voila!</DSCPT>
     </R108>
 
 
@@ -261,65 +260,65 @@
         <MAP>showMap("img_slot1", "slugtrail-colleges and departments/Oakes/upstairs classrooms/upstairs classrooms.</MAP>
     </R220>
     <R220>
-        <IMGSRC>1","slugtrail-colleges and departments/Oakes/foundation/1-OakesFoundation.JPG</DSCPT>
-        <DSCPT>1","Begin at the oakes bus stop.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/1-OakesFoundation.JPG</DSCPT>
+        <DSCPT>Begin at the oakes bus stop.</DSCPT>
     </R220>
     <R220>
-        <IMGSRC>2","slugtrail-colleges and departments/Oakes/foundation/2-OakesFoundation.</IMGSRC>
-        <DSCPT>2","Facing the bus stop, turn right and continue forward until you reach the corner of the street. Then make a left.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/2-OakesFoundation.</IMGSRC>
+        <DSCPT>Facing the bus stop, turn right and continue forward until you reach the corner of the street. Then make a left.</DSCPT>
     </R220>
     <R220>
-        <IMGSRC>3","slugtrail-colleges and departments/Oakes/foundation/3-OakesFoundation.</IMGSRC>
-        <DSCPT>3","Continue past the parking lot, on the sidewalk.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/3-OakesFoundation.</IMGSRC>
+        <DSCPT>Continue past the parking lot, on the sidewalk.</DSCPT>
     </R220>
     <R220>
-        <IMGSRC>4","slugtrail-colleges and departments/Oakes/foundation/4-OakesFoundation.</IMGSRC>
-        <DSCPT>4","Continue along the curve of the road.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/4-OakesFoundation.</IMGSRC>
+        <DSCPT>Continue along the curve of the road.</DSCPT>
     </R220>
     <R220>
-        <IMGSRC>5","slugtrail-colleges and departments/Oakes/foundation/5-OakesFoundation.</IMGSRC>
-        <DSCPT>5","Head towards the white buildings (Carson housing) ahead, but stay on the street.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/5-OakesFoundation.</IMGSRC>
+        <DSCPT>Head towards the white buildings (Carson housing) ahead, but stay on the street.</DSCPT>
     </R220>
     <R220>
-        <IMGSRC>6","slugtrail-colleges and departments/Oakes/foundation/6-OakesFoundation.</IMGSRC>
-        <DSCPT>6","When you reach a fork in the road, take the path that leads down to the right towards the Oakes Circle.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/foundation/6-OakesFoundation.</IMGSRC>
+        <DSCPT>When you reach a fork in the road, take the path that leads down to the right towards the Oakes Circle.</DSCPT>
     </R220>
     <R220>
         
-        <IMGSRC>7","slugtrail-colleges and departments/Oakes/upper classrooms/1-upperclassrooms.</IMGSRC>
-        <DSCPT>7","Walk past the Oakes College sign and head left into the college.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/upper classrooms/1-upperclassrooms.</IMGSRC>
+        <DSCPT>Walk past the Oakes College sign and head left into the college.</DSCPT>
     </R220>
     <R220>
-        <IMGSRC>8","slugtrail-colleges and departments/Oakes/upper classrooms/2-upperclassrooms.</IMGSRC>
-        <DSCPT>8","Walk along the perimeter of the building, making a right after reaching the college offices. Continue along the hallway past 101 and 102.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/upper classrooms/2-upperclassrooms.</IMGSRC>
+        <DSCPT>Walk along the perimeter of the building, making a right after reaching the college offices. Continue along the hallway past 101 and 102.</DSCPT>
     </R220>
     <R220>
-        <IMGSRC>9","slugtrail-colleges and departments/Oakes/upper classrooms/3-upperclassrooms.</IMGSRC>
-        <DSCPT>9","Continue past the bulletin board. Make a left at the end of the hallway.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/upper classrooms/3-upperclassrooms.</IMGSRC>
+        <DSCPT>Continue past the bulletin board. Make a left at the end of the hallway.</DSCPT>
     </R220>
     <R220>
-        <IMGSRC>10","slugtrail-colleges and departments/Oakes/upper classrooms/4-upperclassrooms.</IMGSRC>
-        <DSCPT>10","Make a right past the drinking fountain. Walk past room 105.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/upper classrooms/4-upperclassrooms.</IMGSRC>
+        <DSCPT>Make a right past the drinking fountain. Walk past room 105.</DSCPT>
     </R220>
     <R220>
-        <IMGSRC>11","slugtrail-colleges and departments/Oakes/upper classrooms/5-upperclassrooms.</IMGSRC>
-        <DSCPT>11","At the end of the walkway, turn right.</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/upper classrooms/5-upperclassrooms.</IMGSRC>
+        <DSCPT>At the end of the walkway, turn right.</DSCPT>
     </R220>
     <R220>
-        <IMGSRC>12","slugtrail-colleges and departments/Oakes/upper classrooms/6-upperclassrooms.</IMGSRC>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/upper classrooms/6-upperclassrooms.</IMGSRC>
         <DSCPT>Go up the stairs.</DSCPT>
     </R220>
     <R220>
-        <IMGSRC>13","slugtrail-colleges and departments/Oakes/upper classrooms/7-upperclassrooms.</IMGSRC>
-        <DSCPT>13","At the top of the stairs, immediately to the right are classrooms 221 and 299. At the end of the upstairs hall are 220, 222, 224. Voila!</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/upper classrooms/7-upperclassrooms.</IMGSRC>
+        <DSCPT>At the top of the stairs, immediately to the right are classrooms 221 and 299. At the end of the upstairs hall are 220, 222, 224. Voila!</DSCPT>
     </R220>
     <R220>
-        <IMGSRC>14","slugtrail-colleges and departments/Oakes/upper classrooms/8-upperclassrooms.JPG</DSCPT>
-        <DSCPT>14","At the top of the stairs, immediately to the right are classrooms 221 and 299. Voila!</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/upper classrooms/8-upperclassrooms.JPG</DSCPT>
+        <DSCPT>At the top of the stairs, immediately to the right are classrooms 221 and 299. Voila!</DSCPT>
     </R220>
     <R220>
-        <IMGSRC>15","slugtrail-colleges and departments/Oakes/upper classrooms/9-upperclassrooms.JPG</DSCPT>
-        <DSCPT>15","At the end of the upstairs hall are 220, 222, 224. Voila!</DSCPT>
+        <IMGSRC>slugtrail-colleges and departments/Oakes/upper classrooms/9-upperclassrooms.JPG</DSCPT>
+        <DSCPT>At the end of the upstairs hall are 220, 222, 224. Voila!</DSCPT>
     </R220>
     <R220>
 </root>
