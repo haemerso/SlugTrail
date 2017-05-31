@@ -10,9 +10,7 @@
 <!-- UMB: Cowell Upstairs Main Building (210-225) -->
 
     <!-- R131: cowell 131-->
-    <R131>
-        <MAP>slugtrail-colleges_and_departments/Cowell/131/131-map.JPG</MAP>
-    </R131>
+   
     <R131>
         <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/1-foundation.JPG</IMGSRC>
         <DSCPT>Begin at the Bookstore/Cowell/Stevenson bus stop.</DSCPT>
@@ -56,9 +54,7 @@
 
 
     <!-- R134: cowell 134 -->
-    <R134>
-        <MAP>showMap("img_slot1", "slugtrail-colleges_and_departments/Cowell/134/131-map.JPG</MAP>
-    </R134>
+    
     <R134>
         <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/1-foundation.JPG</IMGSRC>
         <DSCPT>Begin at the Bookstore/Cowell/Stevenson bus stop.</DSCPT>
@@ -115,9 +111,6 @@
     
 <!-- MB: cowell Main Building(110-125)-->
     <MB>
-        <MAP>showMap("img_slot1", "slugtrail-colleges_and_departments/Cowell/mainbuilding/main building.JPG</MAP>        
-    </MB>
-    <MB>
         <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/1-foundation.JPG</IMGSRC>
         <DSCPT>Begin at the Bookstore/Cowell/Stevenson bus stop.</DSCPT>
     </MB>
@@ -172,9 +165,7 @@
     
 
 <!--    UMB: Cowell Upstairs Main Building (210-225)-->
-    <UMB>
-        <MAP>showMap("img_slot1", "slugtrail-colleges_and_departments/Cowell/upstairs_mainbuilding/main building.JPG</MAP>
-    </UMB>
+    
     <UMB>
         <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/1-foundation.JPG</IMGSRC>
         <DSCPT>Begin at the Bookstore/Cowell/Stevenson bus stop.</DSCPT>

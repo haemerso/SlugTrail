@@ -1,4 +1,4 @@
-<root>
+<CATALOG>
 <!--//showImg(name of image slot, image src);
 //<IMGSRC>1https://lh3.googleusercontent.com/8LKhF9LpK6xKpar244kqQFGLD6Y11bp40rf1LWh-4t02b7V8jrqrAtodZLSUKq0bhYseO-Lum8WEww=w1366-h599-rw</DSCPT>
 //showImg(name of text slot, content of text);-->
@@ -13,9 +13,6 @@
 
     <!--OLC, oakes learning product-->
     <OLC>
-        <MAP>slugtrail-colleges_and_departments/Oakes/oakes learning center/oakeslearningcenter.</MAP>
-    </OLC>
-    <OLC>
         <IMGSRC>slugtrail-colleges_and_departments/Oakes/foundation/1-OakesFoundation.jpg</IMGSRC>
         <DSCPT>Begin at the oakes bus stop.</DSCPT>
     </OLC>
@@ -24,7 +21,7 @@
         <DSCPT>Facing the bus stop, turn right and continue forward until you reach the corner of the street. Then make a left.</DSCPT>
     </OLC>
     <OLC>
-        <IMGSRC>lugtrail-colleges and departments/Oakes/foundation/3-OakesFoundation.jpg</IMGSRC>
+        <IMGSRC>lugtrail-colleges_and_departments/Oakes/foundation/3-OakesFoundation.jpg</IMGSRC>
         <DSCPT>Continue past the parking lot, on the sidewalk.</DSCPT>
     </OLC>
     <OLC>
@@ -59,12 +56,9 @@
         <IMGSRC>slugtrail-colleges_and_departments/Oakes/oakes learning center/5-OakesLearningCenter.jpg</IMGSRC>
         <DSCPT>Voila!</DSCPT>
     </OLC>
-    <OLC>
+    
 
     <!-- R101: oakes 101 102-->
-    <R101>
-        <MAP>showMap("img_slot1", "slugtrail-colleges_and_departments/Oakes/Oakes 101,102/map101,102.</MAP>
-    </R101>
     <R101>
         <IMGSRC>slugtrail-colleges_and_departments/Oakes/foundation/1-OakesFoundation.jpg</IMGSRC>
         <DSCPT>Begin at the oakes bus stop.</DSCPT>
@@ -103,9 +97,6 @@
     </R101>
 
     <!-- R103: oakes 103 104-->
-    <R103>
-        <MAP>showMap("img_slot1", "slugtrail-colleges_and_departments/Oakes/Oakes 103,104/mapOakes103,104.</MAP>        
-    </R103>
     <R103>
         <IMGSRC>slugtrail-colleges_and_departments/Oakes/foundation/1-OakesFoundation.jpg</IMGSRC>
         <DSCPT>Begin at the oakes bus stop.</DSCPT>
@@ -148,9 +139,6 @@
     </R103>
 
     <!--R105: oakes 105 106-->
-    <R105>
-        <MAP>showMap("img_slot1", "slugtrail-colleges_and_departments/Oakes/Oakes 105,106/105, 106.</MAP>
-    </R105>
     <R105>
         <IMGSRC>slugtrail-colleges_and_departments/Oakes/foundation/1-OakesFoundation.jpg</IMGSRC>
         <DSCPT>Begin at the oakes bus stop.</DSCPT>
@@ -203,9 +191,6 @@
 
     <!--R108: oakes 108 109 111 -->
     <R108>
-        <MAP>showMap("img_slot1", "slugtrail-colleges_and_departments/Oakes/Oakes 108,109,111/108, 109, 111.</MAP>
-    </R108>
-    <R108>
         <IMGSRC>slugtrail-colleges_and_departments/Oakes/foundation/1-OakesFoundation.jpg</IMGSRC>
         <DSCPT>Begin at the oakes bus stop.</DSCPT>
     </R108>
@@ -257,9 +242,6 @@
 
     <!--R220: oakes 220 221 222 224 229-->
     <R220>
-        <MAP>showMap("img_slot1", "slugtrail-colleges_and_departments/Oakes/upstairs classrooms/upstairs classrooms.</MAP>
-    </R220>
-    <R220>
         <IMGSRC>slugtrail-colleges_and_departments/Oakes/foundation/1-OakesFoundation.jpg</IMGSRC>
         <DSCPT>Begin at the oakes bus stop.</DSCPT>
     </R220>
@@ -284,7 +266,6 @@
         <DSCPT>When you reach a fork in the road, take the path that leads down to the right towards the Oakes Circle.</DSCPT>
     </R220>
     <R220>
-        
         <IMGSRC>slugtrail-colleges_and_departments/Oakes/upper classrooms/1-upperclassrooms.jpg</IMGSRC>
         <DSCPT>Walk past the Oakes College sign and head left into the college.</DSCPT>
     </R220>
@@ -321,4 +302,4 @@
         <DSCPT>At the end of the upstairs hall are 220, 222, 224. Voila!</DSCPT>
     </R220>
     
-</root>
+</CATALOG>
