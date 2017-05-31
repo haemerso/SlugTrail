@@ -1,26 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+    
 <head>
-  <link ref="stylesheet" href="index.css" type="text/css" />
+
+  <title>SlugTrail</title>
+    
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>SlugTrail</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+    
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="app.css">
   <link rel="stylesheet" href="stupid.css" type="text/css" /> 
+  <link ref="stylesheet" href="index.css" type="text/css" />
+    
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+ 
 </head>
+
 <body>
     <p id="p1"></p>
-<!--    <input type=text" id="myInput" onkeyup="myFunction()" 
-           placeholder="Search for rooms..">-->
+    <!--input type=text" id="myInput" onkeyup="myFunction()" 
+           placeholder="Search for rooms.."-->
+    
+    <style>
+            #to-top{
+                position:fixed;
+                bottom: 5em;
+                right: 0em;
+            }
+            .frame{
+                height: auto;
+                width: 300px;
+                position: relative;
+                padding-bottom: 66.6%;
+                overflow: hidden;
+            }
+            
+            img{
+                
+                top: 100%; bottom: 100%;
+                margin: auto;
+                width: 100%;
+                height: auto;
+                max-width: 200px;
+            }
+        </style>
+    <a class="btn white padded" id="to-top" onclick="goTop()"><i class ="fa fa-angle-double-up fa-5x"></i>TOP</a>
     <div class="header">
         <br/>
         <div class="center"> <h1>Kresge College</h1></div>
         <div class ="border">
             <div class ="center padded">
+                <a href = "index.html"><span class = "glyphicon glyphicon-home"></span></a>
+                
+                <style>
+                .glyphicon{
+                    margin-right: 20px;
+                    font-size: 30px;
+                    color: white;
+                </style>
+                
                 <button class="btn yellow rounded" onclick="showSet1()">159 (Seminar Room)</button>  
                 <button class="btn yellow rounded" onclick="showSet2()">194</button>
                 <button class="btn yellow rounded" onclick="showSet3()">317</button>
@@ -28,396 +73,84 @@
                 <button class="btn yellow rounded" onclick="showSet5()">321</button>
                 <button class="btn yellow rounded" onclick="showSet6()">323</button>
                 <button class="btn yellow rounded" onclick="showSet7()">325</button>
-                <button class="btn yellow rounded" onclick="showSet8()">327</button>
+                <button class="btn yellow rounded" onclick="showSet8()">327</button> 
             </div>
-            
-            <script>
+        </div>
+    </div>
+    
+<!--        <script>
                 $("button").on("click", function(){
                     $("button").removeClass("selected");
                     $(this).addClass("selected")});
-            </script>
-        </div> 
-    </div>
-    <!--div class="threequarter container padded center"-->
-	<table>
-
-        <tr>
-		<th><img id="img_slot1" style="width:20em"></th>
-		<th><p id="txt_slot1" style="float: left"></p></th>
-		<br>
-		
-		<tr>
-		<th><img id="img_slot2" style="width:20em"></th>
-		<th><p id="txt_slot2" style="float: left"></p></th>
-		<br>
-		
-		<tr>
-		<th><img id="img_slot3" style="width:20em"></th>
-		<th><p id="txt_slot3" style="float: left"></p></th>
-		<br>
-                
-                <tr>
-		<th><img id="img_slot4" style="width:20em"></th>
-		<th><p id="txt_slot4" style="float: left"></p></th>
-		<br>
-                
-                <tr>
-		<th><img id="img_slot5" style="width:20em"></th>
-		<th><p id="txt_slot5" style="float: left"></p></th>
-		<br>
-                
-                <tr>
-		<th><img id="img_slot6" style="width:20em"></th>
-		<th><p id="txt_slot6" style="float: left"></p></th>
-		<br>
-                
-                <tr>
-		<th><img id="img_slot7" style="width:20em"></th>
-		<th><p id="txt_slot7" style="float: left"></p></th>
-		<br>
-                
-                <tr>
-		<th><img id="img_slot8" style="width:20em"></th>
-		<th><p id="txt_slot8" style="float: left"></p></th>
-		<br>
-                
-                <tr>
-		<th><img id="img_slot9" style="width:20em"></th>
-		<th><p id="txt_slot9" style="float: left"></p></th>
-		<br>
-                
-                <tr>
-		<th><img id="img_slot10" style="width:20em"></th>
-		<th><p id="txt_slot10" style="float: left"></p></th>
-		<br>
-                
-                <tr>
-		<th><img id="img_slot11" style="width:20em"></th>
-		<th><p id="txt_slot11" style="float: left"></p></th>
-		<br>
-                
-                <tr>
-		<th><img id="img_slot12" style="width:20em"></th>
-		<th><p id="txt_slot12" style="float: left"></p></th>
-		<br>
-                
-                <tr>
-		<th><img id="img_slot13" style="width:20em"></th>
-		<th><p id="txt_slot13" style="float: left"></p></th>
-		<br>
-                
-                <tr>
-		<th><img id="img_slot14" style="width:20em"></th>
-		<th><p id="txt_slot14" style="float: left"></p></th>
-		<br>
-                
-                <tr>
-		<th><img id="img_slot15" style="width:20em"></th>
-		<th><p id="txt_slot15" style="float: left"></p></th>
-		<br>
-                
-                <tr>
-		<th><img id="map_slot1" style="width:20em"></th>
-		<br>
+            </script>-->
+    <table>   
+            <tr>
+            <th><img id="map_slot1" style="width:20em"></th>
+	    <br>
     </table>
-	<!--/div-->
-    <!--ul id="imgList"></ul-->
+            
+    <div class="center">
+        <table class="center" id="demo"></table>
+    </div>         
     
-   <div ng-view></div>
-
-   
-   
+    <div ng-view></div>
+    
     <script>
+        var selection = "R159"; //the current room selection
+        
 	function showSet1(){
-		//showImg(name of image slot, image src);
-                //showImg("img_slot1","https://lh3.googleusercontent.com/8LKhF9LpK6xKpar244kqQFGLD6Y11bp40rf1LWh-4t02b7V8jrqrAtodZLSUKq0bhYseO-Lum8WEww=w1366-h599-rw");
-		//showImg(name of text slot, content of text);
-                showMap("map_slot1", "slugtrail-colleges and departments/Kresge/kresge159/seminar.png");
-                showImg("img_slot1","slugtrail-colleges and departments/Kresge/foundation/1-kresge.JPG");
-		showTxt("txt_slot1","Begin at the Kresge bus stop.");
-		showImg("img_slot2","slugtrail-colleges and departments/Kresge/foundation/2-kresge.jpg");
-		showTxt("txt_slot2","Facing the bus stop, make a left and walk up the stairs towards the bridge.");
-		showImg("img_slot3","slugtrail-colleges and departments/Kresge/foundation/3-kresge.jpg");
-                showTxt("txt_slot3","Walk across the bridge. Enjoy nature.");
-                showImg("img_slot4","slugtrail-colleges and departments/Kresge/foundation/4-kresge.jpg");
-                showTxt("txt_slot4","At the Kresge College sign, turn left and walk up the stairs.");
-                showImg("img_slot5","slugtrail-colleges and departments/Kresge/foundation/5-kresge.jpg");
-                showTxt("txt_slot5","At the top of the stairs, make a left.");
-                showImg("img_slot6","slugtrail-colleges and departments/Kresge/foundation/6-kresge.jpg");
-                showTxt("txt_slot6","Continue walking forward past the murals and Kresge housing. ");
-                
-                showImg("img_slot7","slugtrail-colleges and departments/Kresge/kresge159/1kresge159.jpg");
-                showTxt("txt_slot7","Continue to your left past room 327 and the Kresge study center.");
-                showImg("img_slot8","slugtrail-colleges and departments/Kresge/kresge159/2kresge159.jpg");
-                showTxt("txt_slot8","Walk past room 325 and down the hill.");
-                showImg("img_slot9","slugtrail-colleges and departments/Kresge/kresge159/3kresge159.jpg");
-                showTxt("txt_slot9","Walk past the bike racks and down the oddly sloped hill that curves right.");
-                showImg("img_slot10","slugtrail-colleges and departments/Kresge/kresge159/4kresge159.jpg");
-                showTxt("txt_slot10","Instead of continuing down the hill, turn right around the corner.");
-                showImg("img_slot11","slugtrail-colleges and departments/Kresge/kresge159/5kresge159.jpg");
-                showTxt("txt_slot11","Walk forward past the murals to your right. ");
-                showImg("img_slot12","slugtrail-colleges and departments/Kresge/kresge159/6kresge159.jpg");
-                showTxt("txt_slot12","Continue walking between the white buildings.");
-                showImg("img_slot13","slugtrail-colleges and departments/Kresge/kresge159/7kresge159.jpg");
-                showTxt("txt_slot13","Walk towards the open piazza.");
-                showImg("img_slot14","slugtrail-colleges and departments/Kresge/kresge159/8kresge159.jpg");
-                showTxt("txt_slot14","Turn left into the piazza and make another left towards the stairs that lead to the seminar room.");
-                showImg("img_slot15","slugtrail-colleges and departments/Kresge/kresge159/9kresge159.JPG");
-                showTxt("txt_slot15","Voila!");
-	}
-	
-	function showSet2(){
-                showMap("map_slot1", "slugtrail-colleges and departments/Kresge/kresge194/194.png");
-                showImg("img_slot1","slugtrail-colleges and departments/Kresge/foundation/1-kresge.JPG");
-		showTxt("txt_slot1","Begin at the Kresge bus stop.");
-		showImg("img_slot2","slugtrail-colleges and departments/Kresge/foundation/2-kresge.jpg");
-		showTxt("txt_slot2","Facing the bus stop, make a left and walk up the stairs towards the bridge.");
-		showImg("img_slot3","slugtrail-colleges and departments/Kresge/foundation/3-kresge.jpg");
-                showTxt("txt_slot3","Walk across the bridge. Enjoy nature.");
-                showImg("img_slot4","slugtrail-colleges and departments/Kresge/foundation/4-kresge.jpg");
-                showTxt("txt_slot4","At the Kresge College sign, turn left and walk up the stairs.");
-                showImg("img_slot5","slugtrail-colleges and departments/Kresge/foundation/5-kresge.jpg");
-                showTxt("txt_slot5","At the top of the stairs, make a left.");
-                showImg("img_slot6","slugtrail-colleges and departments/Kresge/foundation/6-kresge.jpg");
-                showTxt("txt_slot6","Continue walking forward past the murals and Kresge housing. ");
-                
-                showImg("img_slot7","slugtrail-colleges and departments/Kresge/kresge194/1kresge194.jpg");
-                showTxt("txt_slot7","Continue to your left past room 327 and the Kresge study center.");
-                showImg("img_slot8","slugtrail-colleges and departments/Kresge/kresge194/2kresge194.jpg");
-                showTxt("txt_slot8","Walk past room 325 and down the hill.");
-                showImg("img_slot9","slugtrail-colleges and departments/Kresge/kresge194/3kresge194.jpg");
-                showTxt("txt_slot9","Walk past the bike racks and down the oddly sloped hill that curves right.");
-                showImg("img_slot10","slugtrail-colleges and departments/Kresge/kresge194/4kresge194.jpg");
-                showTxt("txt_slot10","Instead of continuing down the hill, turn right around the corner.");
-                showImg("img_slot11","slugtrail-colleges and departments/Kresge/kresge194/5kresge194.jpg");
-                showTxt("txt_slot11","Walk forward past the murals to your right.");
-                showImg("img_slot12","slugtrail-colleges and departments/Kresge/kresge194/6kresge194.jpg");
-                showTxt("txt_slot12","Continue walking between the white buildings.");
-                showImg("img_slot13","slugtrail-colleges and departments/Kresge/kresge194/7kresge194.jpg");
-                showTxt("txt_slot13","Before you reach the piazza, make a left.");
-                showImg("img_slot14","slugtrail-colleges and departments/Kresge/kresge194/8kresge194.JPG");
-                showTxt("txt_slot14","Voila!");
-                showImg("img_slot15","slugtrail-colleges and departments/Capture.jpg");
-                showTxt("txt_slot15"," ");
-	}
-	
-	function showSet3(){
-                showMap("map_slot1", "slugtrail-colleges and departments/Kresge/kresge317/317.png");
-                showImg("img_slot1","slugtrail-colleges and departments/Kresge/foundation/1-kresge.JPG");
-		showTxt("txt_slot1","Begin at the Kresge bus stop.");
-		showImg("img_slot2","slugtrail-colleges and departments/Kresge/foundation/2-kresge.jpg");
-		showTxt("txt_slot2","Facing the bus stop, make a left and walk up the stairs towards the bridge.");
-		showImg("img_slot3","slugtrail-colleges and departments/Kresge/foundation/3-kresge.jpg");
-                showTxt("txt_slot3","Walk across the bridge. Enjoy nature.");
-                showImg("img_slot4","slugtrail-colleges and departments/Kresge/foundation/4-kresge.jpg");
-                showTxt("txt_slot4","At the Kresge College sign, turn left and walk up the stairs.");
-                showImg("img_slot5","slugtrail-colleges and departments/Kresge/foundation/5-kresge.jpg");
-                showTxt("txt_slot5","At the top of the stairs, make a left.");
-                showImg("img_slot6","slugtrail-colleges and departments/Kresge/foundation/6-kresge.jpg");
-                showTxt("txt_slot6","Continue walking forward past the murals and Kresge housing. ");
-                
-                showImg("img_slot7","slugtrail-colleges and departments/Kresge/kresge317/1kresge317.jpg");
-                showTxt("txt_slot7","Continue to your left past room 327 and the Kresge study center.");
-                showImg("img_slot8","slugtrail-colleges and departments/Kresge/kresge317/2kresge317.jpg");
-                showTxt("txt_slot8","Walk past room 325 and down the hill.");
-                showImg("img_slot9","slugtrail-colleges and departments/Kresge/kresge317/3kresge317.jpg");
-                showTxt("txt_slot9","Walk past the bike racks and down the oddly sloped hill that curves right.");
-                showImg("img_slot10","slugtrail-colleges and departments/Kresge/kresge317/4kresge317.jpg");
-                showTxt("txt_slot10","Instead of continuing down the hill, turn right around the corner.");
-                showImg("img_slot11","slugtrail-colleges and departments/Kresge/kresge317/5kresge317.jpg");
-                showTxt("txt_slot11","Curve towards the murals to your right.");
-                showImg("img_slot12","slugtrail-colleges and departments/Kresge/kresge317/6kresge317.jpg");
-                showTxt("txt_slot12","Walk up the stairs.");
-                showImg("img_slot13","slugtrail-colleges and departments/Kresge/kresge317/7kresge317.JPG");
-                showTxt("txt_slot13","Voila!");
-                
-                cleanSlot("img_slot14");
-                cleanSlot("txt_slot14");
-                cleanSlot("img_slot15");
-                cleanSlot("txt_slot15");
-	}
-	
+            selection = "R159";
+            loadXMLDoc();
+            showMap("map_slot1", "slugtrail-colleges_and_departments/kresge/kresge159/seminar.png");
+        }
+        
+        function showSet2(){
+            selection = "R194";
+            loadXMLDoc();
+            showMap("map_slot1", "slugtrail-colleges_and_departments/kresge/kresge194/194.png");
+        }
+        
+        function showSet3(){
+            selection = "R317";
+            loadXMLDoc();
+            showMap("map_slot1", "slugtrail-colleges_and_departments/kresge/kresge317/317.png");
+        }
         function showSet4(){
-                showMap("map_slot1", "slugtrail-colleges and departments/Kresge/kresge319/319.png");
-                showImg("img_slot1","slugtrail-colleges and departments/Kresge/foundation/1-kresge.JPG");
-		showTxt("txt_slot1","Begin at the Kresge bus stop.");
-		showImg("img_slot2","slugtrail-colleges and departments/Kresge/foundation/2-kresge.jpg");
-		showTxt("txt_slot2","Facing the bus stop, make a left and walk up the stairs towards the bridge.");
-		showImg("img_slot3","slugtrail-colleges and departments/Kresge/foundation/3-kresge.jpg");
-                showTxt("txt_slot3","Walk across the bridge. Enjoy nature.");
-                showImg("img_slot4","slugtrail-colleges and departments/Kresge/foundation/4-kresge.jpg");
-                showTxt("txt_slot4","At the Kresge College sign, turn left and walk up the stairs.");
-                showImg("img_slot5","slugtrail-colleges and departments/Kresge/foundation/5-kresge.jpg");
-                showTxt("txt_slot5","At the top of the stairs, make a left.");
-                showImg("img_slot6","slugtrail-colleges and departments/Kresge/foundation/6-kresge.jpg");
-                showTxt("txt_slot6","Continue walking forward past the murals and Kresge housing.");
-                
-                showImg("img_slot7","slugtrail-colleges and departments/Kresge/kresge319/1kresge319.jpg");
-                showTxt("txt_slot7","Continue to your left past room 327 and the Kresge study center.");
-                showImg("img_slot8","slugtrail-colleges and departments/Kresge/kresge319/2kresge319.jpg");
-                showTxt("txt_slot8","Walk past room 325 and down the hill.");
-                showImg("img_slot9","slugtrail-colleges and departments/Kresge/kresge319/3kresge319.jpg");
-                showTxt("txt_slot9","Past the bike racks, make a sharp right turn and do not go up the stairs.");
-                showImg("img_slot10","slugtrail-colleges and departments/Kresge/kresge319/4kresge319.JPG");
-                showTxt("txt_slot10","Voila!");
-                
-                cleanSlot("img_slot11");
-                cleanSlot("txt_slot11");
-                cleanSlot("img_slot12");
-                cleanSlot("txt_slot12");
-                cleanSlot("img_slot13");
-                cleanSlot("txt_slot13");
-                cleanSlot("img_slot14");
-                cleanSlot("txt_slot14");
-                cleanSlot("img_slot15");
-                cleanSlot("txt_slot15");
-	}
-        
+            selection = "R319";
+            loadXMLDoc();
+            showMap("map_slot1", "slugtrail-colleges_and_departments/kresge/kresge319/319.png");
+        }
         function showSet5(){
-                showMap("map_slot1", "slugtrail-colleges and departments/Kresge/kresge321/mapkresge321.png");
-                showImg("img_slot1","slugtrail-colleges and departments/Kresge/foundation/1-kresge.JPG");
-		showTxt("txt_slot1","Begin at the Kresge bus stop.");
-		showImg("img_slot2","slugtrail-colleges and departments/Kresge/foundation/2-kresge.jpg");
-		showTxt("txt_slot2","Facing the bus stop, make a left and walk up the stairs towards the bridge.");
-		showImg("img_slot3","slugtrail-colleges and departments/Kresge/foundation/3-kresge.jpg");
-                showTxt("txt_slot3","Walk across the bridge. Enjoy nature.");
-                showImg("img_slot4","slugtrail-colleges and departments/Kresge/foundation/4-kresge.jpg");
-                showTxt("txt_slot4","At the Kresge College sign, turn left and walk up the stairs.");
-                showImg("img_slot5","slugtrail-colleges and departments/Kresge/foundation/5-kresge.jpg");
-                showTxt("txt_slot5","At the top of the stairs, make a left.");
-                showImg("img_slot6","slugtrail-colleges and departments/Kresge/foundation/6-kresge.jpg");
-                showTxt("txt_slot6","Continue walking forward past the murals and Kresge housing.");
-                
-                showImg("img_slot7","slugtrail-colleges and departments/Kresge/kresge321/1kresge321.jpg");
-                showTxt("txt_slot7","Continue to your left past room 327 and the Kresge study center. Immediately after walking behind room 327, make a right.");
-                showImg("img_slot8","slugtrail-colleges and departments/Kresge/kresge321/2kresge321.jpg");
-                showTxt("txt_slot8","Walk past room 325 and make a left at the end of the walkway.");
-                showImg("img_slot9","slugtrail-colleges and departments/Kresge/kresge321/3kresge321.jpg");
-                showTxt("txt_slot9","Walk down the walkway and turn left. The room is to your left on the wall in front of you.");
-                showImg("img_slot10","slugtrail-colleges and departments/Kresge/kresge321/4kresge321.JPG");
-                showTxt("txt_slot10","Voila!");
-                
-                cleanSlot("img_slot11");
-                cleanSlot("txt_slot11");
-                cleanSlot("img_slot12");
-                cleanSlot("txt_slot12");
-                cleanSlot("img_slot13");
-                cleanSlot("txt_slot13");
-                cleanSlot("img_slot14");
-                cleanSlot("txt_slot14");
-                cleanSlot("img_slot15");
-                cleanSlot("txt_slot15");
-	}
-        
+            selection = "R321";
+            loadXMLDoc();
+            showMap("map_slot1", "slugtrail-colleges_and_departments/kresge/kresge321/mapkresge321.png");
+        }
         function showSet6(){
-                showMap("map_slot1", "slugtrail-colleges and departments/Kresge/kresge323/325, 323.png");
-                showImg("img_slot1","slugtrail-colleges and departments/Kresge/foundation/1-kresge.JPG");
-		showTxt("txt_slot1","Begin at the Kresge bus stop.");
-		showImg("img_slot2","slugtrail-colleges and departments/Kresge/foundation/2-kresge.jpg");
-		showTxt("txt_slot2","Facing the bus stop, make a left and walk up the stairs towards the bridge.");
-		showImg("img_slot3","slugtrail-colleges and departments/Kresge/foundation/3-kresge.jpg");
-                showTxt("txt_slot3","Walk across the bridge. Enjoy nature.");
-                showImg("img_slot4","slugtrail-colleges and departments/Kresge/foundation/4-kresge.jpg");
-                showTxt("txt_slot4","At the Kresge College sign, turn left and walk up the stairs.");
-                showImg("img_slot5","slugtrail-colleges and departments/Kresge/foundation/5-kresge.jpg");
-                showTxt("txt_slot5","At the top of the stairs, make a left.");
-                showImg("img_slot6","slugtrail-colleges and departments/Kresge/foundation/6-kresge.jpg");
-                showTxt("txt_slot6","Continue walking forward past the murals and Kresge housing.");
-                
-                showImg("img_slot7","slugtrail-colleges and departments/Kresge/kresge323/1kresge323.jpg");
-                showTxt("txt_slot7","Continue to your left past room 327 and the Kresge study center. Immediately after walking behind room 327, make a right.");
-                showImg("img_slot8","slugtrail-colleges and departments/Kresge/kresge323/2kresge323.jpg");
-                showTxt("txt_slot8","Walk past room 325 and make a left at the end of the walkway.");
-                showImg("img_slot9","slugtrail-colleges and departments/Kresge/kresge323/3kresge323.jpg");
-                showTxt("txt_slot9","Walk down the walkway and turn left. The room is to your left on the wall behind you.");
-                showImg("img_slot10","slugtrail-colleges and departments/Kresge/kresge323/4kresge323.JPG");
-                showTxt("txt_slot10","Voila!"); 
-                
-                cleanSlot("img_slot11");
-                cleanSlot("txt_slot11");
-                cleanSlot("img_slot12");
-                cleanSlot("txt_slot12");
-                cleanSlot("img_slot13");
-                cleanSlot("txt_slot13");
-                cleanSlot("img_slot14");
-                cleanSlot("txt_slot14");
-                cleanSlot("img_slot15");
-                cleanSlot("txt_slot15");
-	}
-        
+            selection = "R323";
+            loadXMLDoc();
+            showMap("map_slot1", "slugtrail-colleges_and_departments/kresge/kresge323/325, 323.png");
+        }
         function showSet7(){
-                showMap("map_slot1", "slugtrail-colleges and departments/Kresge/kresge325/325.png");
-                showImg("img_slot1","slugtrail-colleges and departments/Kresge/foundation/1-kresge.JPG");
-		showTxt("txt_slot1","Begin at the Kresge bus stop.");
-		showImg("img_slot2","slugtrail-colleges and departments/Kresge/foundation/2-kresge.jpg");
-		showTxt("txt_slot2","Facing the bus stop, make a left and walk up the stairs towards the bridge.");
-		showImg("img_slot3","slugtrail-colleges and departments/Kresge/foundation/3-kresge.jpg");
-                showTxt("txt_slot3","Walk across the bridge. Enjoy nature.");
-                showImg("img_slot4","slugtrail-colleges and departments/Kresge/foundation/4-kresge.jpg");
-                showTxt("txt_slot4","At the Kresge College sign, turn left and walk up the stairs.");
-                showImg("img_slot5","slugtrail-colleges and departments/Kresge/foundation/5-kresge.jpg");
-                showTxt("txt_slot5","At the top of the stairs, make a left.");
-                showImg("img_slot6","slugtrail-colleges and departments/Kresge/foundation/6-kresge.jpg");
-                showTxt("txt_slot6","Continue walking forward past the murals and Kresge housing.");
-                
-                showImg("img_slot7","slugtrail-colleges and departments/Kresge/kresge325/1kresge325.jpg");
-                showTxt("txt_slot7","Continue to your left past room 327 and the Kresge study center. Immediately after walking behind room 327, make a right.");
-                showImg("img_slot8","slugtrail-colleges and departments/Kresge/kresge325/2kresge325.JPG");
-                showTxt("txt_slot8","Voila!");
-                
-                cleanSlot("img_slot9");
-                cleanSlot("txt_slot9");
-                cleanSlot("img_slot10");
-                cleanSlot("txt_slot10");
-                cleanSlot("img_slot11");
-                cleanSlot("txt_slot11");
-                cleanSlot("img_slot12");
-                cleanSlot("txt_slot12");
-                cleanSlot("img_slot13");
-                cleanSlot("txt_slot13");
-                cleanSlot("img_slot14");
-                cleanSlot("txt_slot14");
-                cleanSlot("img_slot15");
-                cleanSlot("txt_slot15");
-	}
-        
+            selection = "R325";
+            loadXMLDoc();
+            showMap("map_slot1", "slugtrail-colleges_and_departments/kresge/kresge325/325.png");
+        }
         function showSet8(){
-                showMap("map_slot1", "slugtrail-colleges and departments/Kresge/kresge327/327.png");
-                showImg("img_slot1","slugtrail-colleges and departments/Kresge/foundation/1-kresge.JPG");
-		showTxt("txt_slot1","Begin at the Kresge bus stop.");
-		showImg("img_slot2","slugtrail-colleges and departments/Kresge/foundation/2-kresge.jpg");
-		showTxt("txt_slot2","Facing the bus stop, make a left and walk up the stairs towards the bridge.");
-		showImg("img_slot3","slugtrail-colleges and departments/Kresge/foundation/3-kresge.jpg");
-                showTxt("txt_slot3","Walk across the bridge. Enjoy nature.");
-                showImg("img_slot4","slugtrail-colleges and departments/Kresge/foundation/4-kresge.jpg");
-                showTxt("txt_slot4","At the Kresge College sign, turn left and walk up the stairs.");
-                showImg("img_slot5","slugtrail-colleges and departments/Kresge/foundation/5-kresge.jpg");
-                showTxt("txt_slot5","At the top of the stairs, make a left.");
-                showImg("img_slot6","slugtrail-colleges and departments/Kresge/foundation/6-kresge.jpg");
-                showTxt("txt_slot6","Continue walking forward past the murals and Kresge housing.");
-                
-                showImg("img_slot7","slugtrail-colleges and departments/Kresge/kresge327/1kresge327.JPG");
-                showTxt("txt_slot7","Voila!");
-                
-                cleanSlot("img_slot8");
-                cleanSlot("txt_slot8");
-                cleanSlot("img_slot9");
-                cleanSlot("txt_slot9");
-                cleanSlot("img_slot10");
-                cleanSlot("txt_slot10");
-                cleanSlot("img_slot11");
-                cleanSlot("txt_slot11");
-                cleanSlot("img_slot12");
-                cleanSlot("txt_slot12");
-                cleanSlot("img_slot13");
-                cleanSlot("txt_slot13");
-                cleanSlot("img_slot14");
-                cleanSlot("txt_slot14");
-                cleanSlot("img_slot15");
-                cleanSlot("txt_slot15");
-	}
-        
-        
+            selection = "R327";
+            loadXMLDoc();
+            showMap("map_slot1", "slugtrail-colleges_and_departments/kresge/kresge327/327.png");
+        }
+            
+        function loadXMLDoc(){
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if(this.readyState == 4 && this.status == 200)
+                    getDataSet(this);
+                //else alert("database not ready yet!");
+            };
+            xmlhttp.open("GET", "db_kresge.xml", true); //get data from database
+            xmlhttp.send();
+        }
         
         function showMap(slot_num, src){
             var img = document.createElement("img");
@@ -430,44 +163,29 @@
 //            el.style.paddingTop= "245px";
             el.src = img.src;
         }
-               
-	function showImg(slot_num, src){
-		var img = document.createElement("img");
-		var snum = slot_num;
-		img.src = src;
-		document.getElementById(slot_num).src=img.src;
-	}
-	
-	function showTxt(slot_num, text){
-		var p = document.createElement("p");
-		var snum = slot_num;
-		//var th_content = text;
-		document.getElementById(slot_num).innerHTML = text;
-	}
-
-       
-	if($.mobile.media("screen and (max-device-width: 480px)")) {
-		// Change viewport for smaller devices
-		$('meta[name=viewport]').attr('content','width=device-width, initial-scale=1');
-	}
         
-        //remove content of a slot
-        function cleanSlot(slot_name) {
-            document.getElementById(slot_name).innerHTML = "";
-            document.getElementById(slot_name).src = "";
+        function getDataSet(xml){
+            //var tagRequested = roomnum;
+            var i;
+            var xmlDoc = xml.responseXML;
+            var table = "<tr><th>Image</th><th>Description</th></tr>";
+
+            var x = xmlDoc.getElementsByTagName(selection);
+            for(i = 0; i < x.length; i++){
+                table += "<tr><td><img src=" + 
+                        x[i].getElementsByTagName("IMGSRC") [0].childNodes[0].nodeValue +
+                        " ></img></td><td>" + 
+                        x[i].getElementsByTagName("DSCPT") [0].childNodes[0].nodeValue + 
+                        "</td></tr>";
+            }
+            document.getElementById("demo").innerHTML = table;
         }
-       </script>
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
-  
-  <!--script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="app.js"></script>
-  <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
-  <script src="components/version/version.js"></script>
-  <script src="components/version/version-directive.js"></script>
-  <script src="components/version/interpolate-filter.js"></script-->
+        
+        
+        
+        function goTop(){
+          scroll(0,0);
+      }
+    </script>
 </body>
 </html>
