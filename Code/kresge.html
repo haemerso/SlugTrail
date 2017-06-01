@@ -98,6 +98,8 @@
     <div ng-view></div>
     
     <script>
+	//var selection = "R159";
+	//it turned out that a null selection is not causing any problem.
         var selection = null; //the current room selection
         
 	function showSet1(){
@@ -185,8 +187,10 @@
             var table = "<tr><th>Image</th><th>Description</th></tr>";
 
             var x = xmlDoc.getElementsByTagName(selection);
-            //for each pair of data in the database, insert the image and dscription into the table
-            //
+            //if (x == null) alert("x is nul!");
+	    //it turned out that the missing tags in xml database is causing the problem.
+
+	    //for each pair of data in the database, insert the image and dscription into the table
             for(i = 0; i < x.length; i++){
                 table += "<tr><td><img src=" + 
                         x[i].getElementsByTagName("IMGSRC") [0].childNodes[0].nodeValue +
