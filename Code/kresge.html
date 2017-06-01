@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<!--this is our base html file, the first working html page with xml database involved-->
 <html>
     
 <head>
@@ -34,6 +34,8 @@
                 bottom: 5em;
                 right: 0em;
             }
+	    
+	    //not used in this page
             .frame{
                 height: auto;
                 width: 300px;
@@ -48,7 +50,7 @@
                 margin: auto;
                 width: 100%;
                 height: auto;
-                max-width: 200px;
+                max-width: 200px;//maximum width of image
             }
         </style>
     <a class="btn white padded" id="to-top" onclick="goTop()"><i class ="fa fa-angle-double-up fa-5x"></i>TOP</a>
@@ -96,7 +98,7 @@
     <div ng-view></div>
     
     <script>
-        var selection = "R159"; //the current room selection
+        var selection = null; //the current room selection
         
 	function showSet1(){
             selection = "R159";
@@ -146,7 +148,17 @@
             xmlhttp.onreadystatechange = function() {
                 if(this.readyState == 4 && this.status == 200)
                     getDataSet(this);
-                //else alert("database not ready yet!");
+		//debug alerts, check if the database exists and could be connected
+		//ready state and status reference:
+		//https://www.w3schools.com/xml/dom_httprequest.asp
+		/*
+		else if (this.status == 404) alert("db not found!");
+		else if (this.readyState == 0) alert("request not initiallized!");
+		else if (this.readyState == 1) alert("server connection estalished!");
+		else if (this.readyState == 2) alert("request received!");
+		else if (this.readyState == 3) alert("processing request!");
+		*/
+                //else alert("this is ballocks!");
             };
             xmlhttp.open("GET", "db_kresge.xml", true); //get data from database
             xmlhttp.send();
@@ -160,17 +172,21 @@
             el.style.position = "fixed";
             el.style.bottom = 0;
             el.style.right = 0;
-//            el.style.paddingTop= "245px";
+            //el.style.paddingTop= "245px";
             el.src = img.src;
         }
         
         function getDataSet(xml){
-            //var tagRequested = roomnum;
-            var i;
+            var i;//var in for loop
             var xmlDoc = xml.responseXML;
+		
+	    //first row in table, title. 
+	    //set to empty string if title is not needed
             var table = "<tr><th>Image</th><th>Description</th></tr>";
 
             var x = xmlDoc.getElementsByTagName(selection);
+            //for each pair of data in the database, insert the image and dscription into the table
+            //
             for(i = 0; i < x.length; i++){
                 table += "<tr><td><img src=" + 
                         x[i].getElementsByTagName("IMGSRC") [0].childNodes[0].nodeValue +
@@ -182,10 +198,10 @@
         }
         
         
-        
+        //go to tbe top button
         function goTop(){
           scroll(0,0);
-      }
+        }
     </script>
 </body>
 </html>
