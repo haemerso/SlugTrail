@@ -1,0 +1,59 @@
+<!--checks if the database is avaliable-->
+<html>
+<head>
+    <title>xml database avalibility test</title>
+    <link href="stupid1.css" rel="stylesheet">
+    <!--not the same style sheet-->
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <header class="container center padded blue">
+        <div class="threequarters">
+        <!--a href="index.html"><font color="white">Zhihao Hong's personal webpage</font></a-->
+    
+        <ul class="menu right">
+        </ul>  
+        <h2 class="padded"><font>XML database Testing </font></h2>
+        </div>
+    </header>
+    
+    <body>
+    
+    <div class=" padded threequarters cneter">
+        <div class="padded silver ">
+        <button class="btn rounded navy large" onclick="loadXMLDoc('db_kresge.xml')"> db_kresge </button>
+        <button class="btn rounded navy large" onclick="loadXMLDoc('kresge_data.xml')"> kresge_data </button>
+        <button class="btn rounded navy large" onclick="loadXMLDoc('fail.xml')">this should fail</button>
+        <p>[this should fail] should return db_notfound since there is no such database called fail.xml.</p>
+        </div>
+    </div>
+    
+    </body>
+    
+    <script>
+        function loadXMLDoc(db_name) {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    //getDataSet(this);
+                    alert("database operational!")
+                }
+                //debug alerts, check if the database exists and could be connected
+                //ready state and status reference:
+                //https://www.w3schools.com/xml/dom_httprequest.asp
+                
+                else if (this.status == 404) alert("db not found!");
+                else if (this.readyState == 0) alert("request not initiallized!");
+                else if (this.readyState == 1) alert("server connection estalished!");
+                else if (this.readyState == 2) alert("request received!");
+                else if (this.readyState == 3) alert("processing request!");
+                
+                else alert("this is ballocks!");
+                //else alert("database not ready yet!");
+            };
+            xmlhttp.open("GET", db_name, true);//get data from database. actually not in use here
+            xmlhttp.send();
+        }
+    </script>
+</html>
