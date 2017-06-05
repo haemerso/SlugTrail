@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<!--this is our base html file, the first working html page with xml database involved-->
+<!--KRESGE COLLEGE-->
+
 <html>
     
 <head>
@@ -15,8 +16,7 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="app.css">
-  <link rel="stylesheet" href="stupid.css" type="text/css" /> 
-  <link ref="stylesheet" href="index.css" type="text/css" />
+  <link rel="stylesheet" href="index.css" type="text/css" /> 
     
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
@@ -25,8 +25,6 @@
 
 <body>
     <p id="p1"></p>
-    <!--input type=text" id="myInput" onkeyup="myFunction()" 
-           placeholder="Search for rooms.."-->
     
     <style>
             #to-top{
@@ -34,8 +32,8 @@
                 bottom: 5em;
                 right: 0em;
             }
-	    
-	    //not used in this page
+            
+            
             .frame{
                 height: auto;
                 width: 300px;
@@ -44,16 +42,20 @@
                 overflow: hidden;
             }
             
-            img{
-                
+            
+            img{                
                 top: 100%; bottom: 100%;
                 margin: auto;
                 width: 100%;
                 height: auto;
-                max-width: 200px;//maximum width of image
+                max-width: 450px;
             }
-        </style>
+    </style>
+        
+    <!--create top button-->    
     <a class="btn white padded" id="to-top" onclick="goTop()"><i class ="fa fa-angle-double-up fa-5x"></i>TOP</a>
+    
+    <!--creates classroom button banner and title-->
     <div class="header">
         <br/>
         <div class="center"> <h1>Kresge College</h1></div>
@@ -61,6 +63,8 @@
             <div class ="center padded">
                 <a href = "index.html"><span class = "glyphicon glyphicon-home"></span></a>
                 
+                
+                <!--creates home button-->
                 <style>
                 .glyphicon{
                     margin-right: 20px;
@@ -68,6 +72,8 @@
                     color: white;
                 </style>
                 
+                
+                <!--display directions and images when clicked, calls showSet functions-->
                 <button class="btn yellow rounded" onclick="showSet1()">159 (Seminar Room)</button>  
                 <button class="btn yellow rounded" onclick="showSet2()">194</button>
                 <button class="btn yellow rounded" onclick="showSet3()">317</button>
@@ -80,117 +86,138 @@
         </div>
     </div>
     
-<!--        <script>
-                $("button").on("click", function(){
-                    $("button").removeClass("selected");
-                    $(this).addClass("selected")});
-            </script>-->
-    <table>   
-            <tr>
-            <th><img id="map_slot1" style="width:20em"></th>
-	    <br>
-    </table>
+<!--<tr>-->
+    <!--sets size for map on screen-->
+    <th><img id="map_slot1" style="width:250px"></th>
+    <br>
+   
+    <!--creates table for pictures and descriptions-->           
+    <div>
+        <table id="demo"></table>
+    </div>    
             
-    <div class="center">
-        <table class="center" id="demo"></table>
-    </div>         
+    <div class = "center"><h2>Click on the classroom or classroom range <br/> of the place you need to go.</h2></div>
     
+
+    <!--makes buttons increase size when clicked
+    and return when something else is clicked-->    
+    <script>
+            $("button").on("click", function(){
+                $("button").removeClass("selected");
+                $(this).addClass("selected")});
+    </script>
+        
+    <table>   
     <div ng-view></div>
+    </table>
     
     <script>
-	//var selection = "R159";
-	//it turned out that a null selection is not causing any problem.
-        var selection = null; //the current room selection
+        //the current room selection
+        var selection = "R159"; 
         
+        
+        //show general map in classroom page prior to selecting classrooms
+        showMap("map_slot1", "slugtrail-colleges_and_departments/kresge/KresgeMap.gif");
+        
+        
+        //seminar room 159
 	function showSet1(){
             selection = "R159";
             loadXMLDoc();
             showMap("map_slot1", "slugtrail-colleges_and_departments/kresge/kresge159/seminar.png");
         }
         
+        
+        //room 194
         function showSet2(){
             selection = "R194";
             loadXMLDoc();
             showMap("map_slot1", "slugtrail-colleges_and_departments/kresge/kresge194/194.png");
         }
         
+        
+        //room 317
         function showSet3(){
             selection = "R317";
             loadXMLDoc();
             showMap("map_slot1", "slugtrail-colleges_and_departments/kresge/kresge317/317.png");
         }
+        
+        
+        //room 319
         function showSet4(){
             selection = "R319";
             loadXMLDoc();
             showMap("map_slot1", "slugtrail-colleges_and_departments/kresge/kresge319/319.png");
         }
+        
+        
+        //room 321
         function showSet5(){
             selection = "R321";
             loadXMLDoc();
             showMap("map_slot1", "slugtrail-colleges_and_departments/kresge/kresge321/mapkresge321.png");
         }
+        
+        
+        //room 323
         function showSet6(){
             selection = "R323";
             loadXMLDoc();
             showMap("map_slot1", "slugtrail-colleges_and_departments/kresge/kresge323/325, 323.png");
         }
+        
+        
+        //room 325
         function showSet7(){
             selection = "R325";
             loadXMLDoc();
             showMap("map_slot1", "slugtrail-colleges_and_departments/kresge/kresge325/325.png");
         }
+        
+        
+        //room 327
         function showSet8(){
             selection = "R327";
             loadXMLDoc();
             showMap("map_slot1", "slugtrail-colleges_and_departments/kresge/kresge327/327.png");
         }
-            
+           
+    
+        //
         function loadXMLDoc(){
             var xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function() {
                 if(this.readyState == 4 && this.status == 200)
                     getDataSet(this);
-		//debug alerts, check if the database exists and could be connected
-		//ready state and status reference:
-		//https://www.w3schools.com/xml/dom_httprequest.asp
-		/*
-		else if (this.status == 404) alert("db not found!");
-		else if (this.readyState == 0) alert("request not initiallized!");
-		else if (this.readyState == 1) alert("server connection estalished!");
-		else if (this.readyState == 2) alert("request received!");
-		else if (this.readyState == 3) alert("processing request!");
-		*/
-                //else alert("this is ballocks!");
+                //else alert("database not ready yet!");
             };
             xmlhttp.open("GET", "db_kresge.xml", true); //get data from database
             xmlhttp.send();
         }
         
+        
+        //display specific map fixed on right of screen
         function showMap(slot_num, src){
             var img = document.createElement("img");
             var snum = slot_num;
             img.src = src;
             var el = document.getElementById(slot_num);
             el.style.position = "fixed";
-            el.style.bottom = 0;
+            el.style.bottom = 100;
             el.style.right = 0;
-            //el.style.paddingTop= "245px";
             el.src = img.src;
         }
         
+        
+        //
         function getDataSet(xml){
-            var i;//var in for loop
+            //var tagRequested = roomnum;
+            var i;
             var xmlDoc = xml.responseXML;
-		
-	    //first row in table, title. 
-	    //set to empty string if title is not needed
             var table = "<tr><th>Image</th><th>Description</th></tr>";
 
             var x = xmlDoc.getElementsByTagName(selection);
-            //if (x == null) alert("x is nul!");
-	    //it turned out that the missing tags in xml database is causing the problem.
-
-	    //for each pair of data in the database, insert the image and dscription into the table
             for(i = 0; i < x.length; i++){
                 table += "<tr><td><img src=" + 
                         x[i].getElementsByTagName("IMGSRC") [0].childNodes[0].nodeValue +
@@ -202,7 +229,7 @@
         }
         
         
-        //go to tbe top button
+        //function to bring user to top of page, used with TOP button
         function goTop(){
           scroll(0,0);
         }

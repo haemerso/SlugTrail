@@ -1,12 +1,19 @@
-<!--?xml version="1.0" encoding="UTF-8"?-->
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-
-
 <CATALOG>
+<!--KRESGE DATABASE: contains room specific images with accompanying descriptions
+//showImg(name of image slot, image src);
+//<IMGSRC>1https://lh3.googleusercontent.com/8LKhF9LpK6xKpar244kqQFGLD6Y11bp40rf1LWh-4t02b7V8jrqrAtodZLSUKq0bhYseO-Lum8WEww=w1366-h599-rw</DSCPT>-->
+
+<!-- LIST OF ALL SETS-->
+<!-- R159: Kresge 159-->
+<!-- R194: Kresge 194-->
+<!-- R317: Kresge 317-->
+<!-- R319: Kresge 319-->
+<!-- R321: Kresge 321-->
+<!-- R323: Kresge 323-->
+<!-- R325: Kresge 325-->
+<!-- R327: Kresge 327-->
+
+    <!-- R159: Kresge 159-->
     <R159>
         <IMGSRC>slugtrail-colleges_and_departments/kresge/foundation/1-kresge.JPG</IMGSRC>
         <DSCPT>Begin at the Kresge bus stop.</DSCPT>
@@ -69,7 +76,7 @@ and open the template in the editor.
     </R159>
 
 
-
+    <!-- R194: Kresge 194-->
     <R194>
         <IMGSRC>slugtrail-colleges_and_departments/kresge/foundation/1-kresge.JPG</IMGSRC>
 	<DSCPT>Begin at the Kresge bus stop.</DSCPT>
@@ -128,7 +135,7 @@ and open the template in the editor.
     </R194>
     
     
-    
+    <!-- R317: Kresge 317-->
     <R317>
         <IMGSRC>slugtrail-colleges_and_departments/kresge/foundation/1-kresge.JPG</IMGSRC>
         <DSCPT>Begin at the Kresge bus stop.</DSCPT>
@@ -183,7 +190,7 @@ and open the template in the editor.
     </R317>
                
    
-    
+    <!-- R319: Kresge 319-->
     <R319>
         <IMGSRC>slugtrail-colleges_and_departments/kresge/foundation/1-kresge.JPG</IMGSRC>
         <DSCPT>Begin at the Kresge bus stop.</DSCPT>
@@ -226,7 +233,7 @@ and open the template in the editor.
     </R319>
     
     
-    
+    <!-- R321: Kresge 321-->
     <R321>
         <IMGSRC>slugtrail-colleges_and_departments/kresge/foundation/1-kresge.JPG</IMGSRC>
         <DSCPT>Begin at the Kresge bus stop.</DSCPT>
@@ -269,8 +276,8 @@ and open the template in the editor.
     </R321>
     
     
-    
-      <R323>
+    <!-- R323: Kresge 323-->
+    <R323>
         <IMGSRC>slugtrail-colleges_and_departments/kresge/foundation/1-kresge.JPG</IMGSRC>
         <DSCPT>Begin at the Kresge bus stop.</DSCPT>
     </R323>
@@ -312,6 +319,7 @@ and open the template in the editor.
     </R323>
    
     
+    <!-- R325: Kresge 325-->
     <R325>
          <IMGSRC>slugtrail-colleges_and_departments/kresge/foundation/1-kresge.JPG</IMGSRC>
         <DSCPT>Begin at the Kresge bus stop.</DSCPT>
@@ -354,6 +362,7 @@ and open the template in the editor.
     </R325>
     
     
+    <!-- R327: Kresge 327-->
     <R327>
         <IMGSRC>slugtrail-colleges_and_departments/kresge/foundation/1-kresge.JPG</IMGSRC>
         <DSCPT>Begin at the Kresge bus stop.</DSCPT>

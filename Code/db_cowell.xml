@@ -1,7 +1,6 @@
 <CATALOG>
 <!--//showImg(name of image slot, image src);
-//<IMGSRC>1https://lh3.googleusercontent.com/8LKhF9LpK6xKpar244kqQFGLD6Y11bp40rf1LWh-4t02b7V8jrqrAtodZLSUKq0bhYseO-Lum8WEww=w1366-h599-rw</DSCPT>
-//showImg(name of text slot, content of text);-->
+//<IMGSRC>1https://lh3.googleusercontent.com/8LKhF9LpK6xKpar244kqQFGLD6Y11bp40rf1LWh-4t02b7V8jrqrAtodZLSUKq0bhYseO-Lum8WEww=w1366-h599-rw</DSCPT>-->
 
 <!-- LIST OF ALL SETS-->
 <!-- R131: cowell 131-->
@@ -10,37 +9,36 @@
 <!-- UMB: Cowell Upstairs Main Building (210-225) -->
 
     <!-- R131: cowell 131-->
-   
     <R131>
         <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/1-foundation.JPG</IMGSRC>
         <DSCPT>Begin at the Bookstore/Cowell/Stevenson bus stop.</DSCPT>
     </R131>
     <R131>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/2-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/2-foundation.JPG</IMGSRC>
         <DSCPT>Head up the stairs to the left of the bus stop.</DSCPT>
     </R131>
     <R131>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/3-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/3-foundation.JPG</IMGSRC>
         <DSCPT>Take the left fork to stay left of the dorm buildings.</DSCPT>
     </R131>
     <R131>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/4-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/4-foundation.JPG</IMGSRC>
         <DSCPT>Continue up the hill.</DSCPT>
     </R131>
     <R131>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/5-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/5-foundation.JPG</IMGSRC>
         <DSCPT>At the end of the dorm building, take a right.</DSCPT>
     </R131>
     <R131>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/6-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/6-foundation.JPG</IMGSRC>
         <DSCPT>Head up the walkway with rails.</DSCPT>
     </R131>
     <R131>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/7-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/7-foundation.JPG</IMGSRC>
         <DSCPT>Turn right at the end of the walkway at the dumpster.</DSCPT>
     </R131>
     <R131>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/8-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/8-foundation.JPG</IMGSRC>
         <DSCPT>Turn left into the walkway between classrooms.</DSCPT>
     </R131>
     <R131>
@@ -53,38 +51,37 @@
     </R131>
 
 
-    <!-- R134: cowell 134 -->
-    
+    <!-- R134: cowell 134 -->    
     <R134>
         <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/1-foundation.JPG</IMGSRC>
         <DSCPT>Begin at the Bookstore/Cowell/Stevenson bus stop.</DSCPT>
     </R134>
     <R134>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/2-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/2-foundation.JPG</IMGSRC>
         <DSCPT>Head up the stairs to the left of the bus stop.</DSCPT>
     </R134>
     <R134>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/3-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/3-foundation.JPG</IMGSRC>
         <DSCPT>Take the left fork to stay left of the dorm buildings.</DSCPT>
     </R134>
     <R134>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/4-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/4-foundation.JPG</IMGSRC>
         <DSCPT>Continue up the hill.</DSCPT>
     </R134>
     <R134>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/5-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/5-foundation.JPG</IMGSRC>
         <DSCPT>At the end of the dorm building, take a right.</DSCPT>
     </R134>
     <R134>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/6-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/6-foundation.JPG</IMGSRC>
         <DSCPT>Head up the walkway with rails.</DSCPT>
     </R134>
     <R134>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/7-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/7-foundation.JPG</IMGSRC>
         <DSCPT>Turn right at the end of the walkway at the dumpster.</DSCPT>
     </R134>
     <R134>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/8-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/8-foundation.JPG</IMGSRC>
         <DSCPT>Turn left into the walkway between classrooms.</DSCPT>
     </R134>
     <R134>
@@ -109,37 +106,37 @@
     </R134>
     
     
-<!-- MB: cowell Main Building(110-125)-->
+    <!-- MB: cowell Main Building(110-125)-->
     <MB>
         <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/1-foundation.JPG</IMGSRC>
         <DSCPT>Begin at the Bookstore/Cowell/Stevenson bus stop.</DSCPT>
     </MB>
     <MB>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/2-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/2-foundation.JPG</IMGSRC>
         <DSCPT>Head up the stairs to the left of the bus stop.</DSCPT>
     </MB>
     <MB>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/3-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/3-foundation.JPG</IMGSRC>
         <DSCPT>Take the left fork to stay left of the dorm buildings.</DSCPT>
     </MB>
     <MB>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/4-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/4-foundation.JPG</IMGSRC>
         <DSCPT>Continue up the hill.</DSCPT>
     </MB>
     <MB>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/5-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/5-foundation.JPG</IMGSRC>
         <DSCPT>At the end of the dorm building, take a right.</DSCPT>
     </MB>
     <MB>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/6-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/6-foundation.JPG</IMGSRC>
         <DSCPT>Head up the walkway with rails.</DSCPT>
     </MB>
     <MB>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/7-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/7-foundation.JPG</IMGSRC>
         <DSCPT>Turn right at the end of the walkway at the dumpster.</DSCPT>
     </MB>
     <MB>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/8-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/8-foundation.JPG</IMGSRC>
         <DSCPT>Turn left into the walkway between classrooms.</DSCPT>
     </MB>
     <MB>
@@ -147,7 +144,7 @@
         <DSCPT>Take the first door on the left.</DSCPT>
     </MB>
     <MB>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/mainbuilding/2-mainbuilding.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/mainbuilding/2-mainbuilding.JPG</IMGSRC>
         <DSCPT>Take the first door on the left. Viola!</DSCPT>
     </MB>
     <MB>
@@ -159,43 +156,42 @@
         <DSCPT>Voila, 120!</DSCPT>
     </MB>
      <MB>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/mainbuilding/124.JPG.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/mainbuilding/124.JPG</IMGSRC>
         <DSCPT>Voila, 124!</DSCPT>
     </MB>
     
 
-<!--    UMB: Cowell Upstairs Main Building (210-225)-->
-    
+    <!--UMB: Cowell Upstairs Main Building (210-225)-->    
     <UMB>
         <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/1-foundation.JPG</IMGSRC>
         <DSCPT>Begin at the Bookstore/Cowell/Stevenson bus stop.</DSCPT>
     </UMB>
     <UMB>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/2-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/2-foundation.JPG</IMGSRC>
         <DSCPT>Head up the stairs to the left of the bus stop.</DSCPT>
     </UMB>
     <UMB>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/3-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/3-foundation.JPG</IMGSRC>
         <DSCPT>Take the left fork to stay left of the dorm buildings.</DSCPT>
     </UMB>
     <UMB>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/4-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/4-foundation.JPG</IMGSRC>
         <DSCPT>Continue up the hill.</DSCPT>
     </UMB>
     <UMB>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/5-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/5-foundation.JPG</IMGSRC>
         <DSCPT>At the end of the dorm building, take a right.</DSCPT>
     </UMB>
     <UMB>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/6-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/6-foundation.JPG</IMGSRC>
         <DSCPT>Head up the walkway with rails.</DSCPT>
     </UMB>
     <UMB>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/7-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/7-foundation.JPG</IMGSRC>
         <DSCPT>Turn right at the end of the walkway at the dumpster.</DSCPT>
     </UMB>
     <UMB>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/8-foundation.jpg</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/foundation/8-foundation.JPG</IMGSRC>
         <DSCPT>Turn left into the walkway between classrooms.</DSCPT>
     </UMB>
     <UMB>
@@ -223,7 +219,7 @@
         <DSCPT>Voila, 223!</DSCPT>
     </UMB>
     <UMB>
-        <IMGSRC>slugtrail-colleges_and_departments/Cowell/upstairs_mainbuilding/224, 225.JPG</IMGSRC>
+        <IMGSRC>slugtrail-colleges_and_departments/Cowell/upstairs_mainbuilding/224_225.JPG</IMGSRC>
         <DSCPT>Voila, 224, 225!</DSCPT>
     </UMB>
 

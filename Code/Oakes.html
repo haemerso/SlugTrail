@@ -1,23 +1,79 @@
+<!DOCTYPE html>
+<!--OAKES COLLEGE-->
+
 <html>
+    
 <head>
-    <link ref="stylesheet" href="index.css" type="text/css" />
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SlugTrail</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
-    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
-    <!--link rel="stylesheet" href="app.css">
-    <link rel="stylesheet" href="stupid.css" type="text/css" />  
-    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script-->
+
+  <title>SlugTrail</title>
+    
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="index.css" type="text/css" /> 
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+ 
 </head>
+
 <body>
+    <p id="p1"></p>
+        
+    <style>
+            #to-top{
+                position:fixed;
+                bottom: 5em;
+                right: 0em;
+            }
+            
+            
+            .frame{
+                height: auto;
+                width: 300px;
+                position: relative;
+                padding-bottom: 66.6%;
+                overflow: hidden;
+            }
+            
+            
+            img{
+                top: 100%; bottom: 100%;
+                margin: auto;
+                width: 100%;
+                height: auto;
+                max-width: 450px;
+            }
+    </style>
+        
+    <!--create top button-->
+    <a class="btn white padded" id="to-top" onclick="goTop()"><i class ="fa fa-angle-double-up fa-5x"></i>TOP</a>
+    
+    <!--creates classroom button banner and title-->
     <div class="header">
         <br/>
         <div class="center"> <h1>Oakes College</h1></div>
         <div class ="border">
             <div class ="center padded">
+                <a href = "index.html"><span class = "glyphicon glyphicon-home"></span></a>
+                
+                
+                <!--creates home button-->
+                <style>
+                .glyphicon{
+                    margin-right: 20px;
+                    font-size: 30px;
+                    color: white;
+                </style>
+                
+                
+                <!--display directions and images when clicked, calls showSet functions-->
                 <button class="btn yellow rounded" onclick="showSet1()">201 (Learning Center)</button>  
                 <button class="btn yellow rounded" onclick="showSet2()">101, 102</button>
                 <button class="btn yellow rounded" onclick="showSet3()">103, 104</button>
@@ -26,141 +82,137 @@
                 <button class="btn yellow rounded" onclick="showSet6()">200's</button>
             </div>
         </div>
-    </div> 
+    </div>
     
-    <table class="center" id="demo"></table>
-    
-    <div ng-view></div>
-
-    <script>
-    //the current room selection
-    var room_select = null;
-    
-    //function which select the rooms
-    function showSet1(){
-        room_select = "OLC";
-        loadXMLDoc();
-    }
-    
-    function showSet1(){
-        room_select = "R101";
-        loadXMLDoc();
-    }
-    function showSet1(){
-        room_select = "R103";
-        loadXMLDoc();
-    }
-    function showSet1(){
-        room_select = "R105";
-        loadXMLDoc();
-    }
-    function showSet1(){
-        room_select = "R108";
-        loadXMLDoc();
-    }
-    function showSet1(){
-        room_select = "R220";
-        loadXMLDoc();
-    }
-    
-    //https://www.w3schools.com/xml/tryit.asp?filename=tryxml_display_table
-    //XML function, get actual data from XML database
-    function loadXMLDoc() {
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                getDataSet(this);
-            }
-        };
-        xmlhttp.open("GET", "db_oakes.xml", true);//get data from database
-        xmlhttp.send();
-    }
-    
-    //get a specific set of data from database
-    function getDataSet(xml) {
-        var i;
-        var xmlDoc = xml.responseXML;
-        var table="<tr><th>Image</th><th>Discription</th></tr>";
-        var x = xmlDoc.getElementsByTagName(roomnum);
-        for (i = 0; i <x.length; i++) { 
-            table += "<tr><td><img src=" +
-            x[i].getElementsByTagName("IMGSRC")[0].childNodes[0].nodeValue +
-            "></img></td><td>" +
-            x[i].getElementsByTagName("DSCPT")[0].childNodes[0].nodeValue +
-            "</td></tr>";
-        }
-        document.getElementById("demo").innerHTML = table;
-    }
-    
-    //get a specific set of data from database
-    function getDataSet(xml) {
-        var i;
-        var xmlDoc = xml.responseXML;
-        var table="<tr><th>Image</th><th>Discription</th></tr>";
-        var x = xmlDoc.getElementsByTagName(roomnum);
-        for (i = 0; i <x.length; i++) { 
-            table += "<tr><td><img src=" +
-            x[i].getElementsByTagName("IMGSRC")[0].childNodes[0].nodeValue +
-            "></img></td><td>" +
-            x[i].getElementsByTagName("DSCPT")[0].childNodes[0].nodeValue +
-            "</td></tr>";
-        }
-        document.getElementById("demo").innerHTML = table;
-    }
-    
-    function showMap(slot_num, src){
-        var img = document.createElement("img");
-        var snum = slot_num;
-        img.src = src;
-        var el = document.getElementById(slot_num);
-        el.style.position = "fixed";
-        el.style.top = 0;
-        el.style.right = 0;
-        el.src = img.src;
-    }
-        
-    /*function showImg(slot_num, src){
-        var img = document.createElement("img");
-        var snum = slot_num;
-        img.src = src;
-        document.getElementById(slot_num).src=img.src;
-    }
-    
-    function showTxt(slot_num, text){
-        var p = document.createElement("p");
-        var snum = slot_num;
-        //var th_content = text;
-        document.getElementById(slot_num).innerHTML = text;
-    }*/
-
-       //mobile view
-    if($.mobile.media("screen and (max-device-width: 480px)")) {
-        // Change viewport for smaller devices
-        $('meta[name=viewport]').attr('content','width=device-width, initial-scale=1');
-    }
-        
-        //remove content of a slot
-        /*function cleanSlot(slot_name) {
-            document.getElementById(slot_name).innerHTML = "";
-            document.getElementById(slot_name).src = "";
-        }*/
-        
-    
-    
-    
-    </script>
+    <!--<tr>-->
+    <!--sets size for map on screen-->
+    <th><img id="map_slot1" style="width:250px"></th>
+    <br>
    
-    <!-- In production use:
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-    -->
-    <!--script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="app.js"></script>
-    <script src="view1/view1.js"></script>
-    <script src="view2/view2.js"></script>
-    <script src="components/version/version.js"></script>
-    <script src="components/version/version-directive.js"></script>
-    <script src="components/version/interpolate-filter.js"></script-->
+   <!--creates table for pictures and descriptions-->         
+    <div>
+        <table id="demo"></table>
+    </div>  
+            
+    <div class = "center"><h2>Click on the classroom or classroom range <br/> of the place you need to go.</h2></div>
+     
+    
+    <!--makes buttons increase size when clicked
+    and return when something else is clicked-->
+    <script>
+            $("button").on("click", function(){
+                $("button").removeClass("selected");
+                $(this).addClass("selected")});
+    </script>
+        
+    <table>   
+    <div ng-view></div>
+    </table>
+    
+    <script>
+        //the current room selection
+        var selection = "OLC"; 
+        
+        //show general map in classroom page prior to selecting classrooms
+        showMap("map_slot1", "slugtrail-colleges_and_departments/Oakes/OakesMap.gif");
+        
+        
+        //Oakes Learning Center
+	function showSet1(){
+            selection = "OLC";
+            loadXMLDoc();
+            showMap("map_slot1", "slugtrail-colleges_and_departments/Oakes/OLC/OLC.jpg");
+        }
+        
+        
+        //Classrooms 101, 102
+        function showSet2(){
+            selection = "R101";
+            loadXMLDoc();
+            showMap("map_slot1", "slugtrail-colleges_and_departments/Oakes/Oakes_101,102/map101,102.jpg");
+        }
+        
+        
+        //classrooms 103, 104
+        function showSet3(){
+            selection = "R103";
+            loadXMLDoc();
+            showMap("map_slot1", "slugtrail-colleges_and_departments/Oakes/Oakes_103,104/mapOakes103,104.jpg");
+        }
+        
+        
+        //classrooms 105, 106
+        function showSet4(){
+            selection = "R105";
+            loadXMLDoc();
+            showMap("map_slot1", "slugtrail-colleges_and_departments/Oakes/Oakes_105,106/105,106.jpg");
+        }
+        
+        
+        //classrooms 108, 109, 111
+        function showSet5(){
+            selection = "R108";
+            loadXMLDoc();
+            showMap("map_slot1", "slugtrail-colleges_and_departments/Oakes/Oakes_108,109,111/108,109,111.jpg");
+        }
+        
+        
+        //upstair classrooms
+        function showSet6(){
+            selection = "R220";
+            loadXMLDoc();
+            showMap("map_slot1", "slugtrail-colleges_and_departments/Oakes/upper_classrooms/upstairs_classrooms.jpg");
+        }
+      
+        
+        //
+        function loadXMLDoc(){
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if(this.readyState == 4 && this.status == 200)
+                    getDataSet(this);
+                //else alert("database not ready yet!");
+            };
+            xmlhttp.open("GET", "db_oakes.xml", true); //get data from database
+            xmlhttp.send();
+        }
+        
+        
+        //display specific map fixed on right of screen
+        function showMap(slot_num, src){
+            var img = document.createElement("img");
+            var snum = slot_num;
+            img.src = src;
+            var el = document.getElementById(slot_num);
+            el.style.position = "fixed";
+            el.style.bottom = 100;
+            el.style.right = 0;
+            el.src = img.src;
+        }
+        
+        
+        //
+        function getDataSet(xml){
+            //var tagRequested = roomnum;
+            var i;
+            var xmlDoc = xml.responseXML;
+            var table = "<tr><th>Image</th><th>Description</th></tr>";
+            var x = xmlDoc.getElementsByTagName(selection);
+            for(i = 0; i < x.length; i++){
+                table += "<tr><td><img src=" + 
+                        x[i].getElementsByTagName("IMGSRC") [0].childNodes[0].nodeValue +
+                        " ></img></td><td>" + 
+                        x[i].getElementsByTagName("DSCPT") [0].childNodes[0].nodeValue + 
+                        "</td></tr>";
+            }
+            document.getElementById("demo").innerHTML = table;
+        }
+        
+        
+        //function to bring user to top of page, used with TOP button
+        function goTop(){
+          scroll(0,0);
+        }
+    </script>
 </body>
 </html>
-

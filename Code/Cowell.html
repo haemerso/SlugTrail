@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--COWELL COLLEGE-->
 
 <html>
     
@@ -15,25 +16,24 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="app.css">
-  <link rel="stylesheet" href="stupid.css" type="text/css" /> 
-  <link ref="stylesheet" href="index.css" type="text/css" />
+  <link rel="stylesheet" href="index.css" type="text/css" /> 
     
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
-    
+ 
 </head>
-    
+
 <body>
     <p id="p1"></p>
-<!--    <input type=text" id="myInput" onkeyup="myFunction()" 
-           placeholder="Search for rooms..">-->
     
-     <style>
+    <style>
             #to-top{
                 position:fixed;
                 bottom: 5em;
                 right: 0em;
             }
+            
+            
             .frame{
                 height: auto;
                 width: 300px;
@@ -42,16 +42,20 @@
                 overflow: hidden;
             }
             
+            
             img{
-                position:absolute;
                 top: 100%; bottom: 100%;
                 margin: auto;
                 width: 100%;
                 height: auto;
+                max-width: 450px;
             }
-        </style>
+    </style>
+    
+    <!--create top button-->  
     <a class="btn white padded" id="to-top" onclick="goTop()"><i class ="fa fa-angle-double-up fa-5x"></i>TOP</a>
     
+    <!--creates classroom button banner and title-->
     <div class="header">
         <br/>
         <div class="center"> <h1>Cowell College</h1></div>
@@ -59,6 +63,8 @@
             <div class ="center padded">
                 <a href = "index.html"><span class = "glyphicon glyphicon-home"></span></a>
                 
+                
+                <!--creates home button-->
                 <style>
                 .glyphicon{
                     margin-right: 20px;
@@ -66,250 +72,133 @@
                     color: white;
                 </style>
                 
+                
+                <!--display directions and images when clicked, calls showSet functions-->
                 <button class="btn yellow rounded" onclick="showSet1()">131</button>  
                 <button class="btn yellow rounded" onclick="showSet2()">134</button>
-                <button class="btn yellow rounded" onclick="showSet3()">Main Building(110-125) </button>
-                <button class="btn yellow rounded" onclick="showSet4()">Upstairs Main Building (210-225)</button>
-                
-                
+                <button class="btn yellow rounded" onclick="showSet3()">Main Building(110-125)</button>
+                <button class="btn yellow rounded" onclick="showSet4()">Upstairs Main Building(210-225) </button>
             </div>
-            
-            <script>
-                $("button").on("click", function(){
-                    $("button").removeClass("selected");
-                    $(this).addClass("selected")});
-            </script>
-            
-        </div> 
+        </div>
     </div>
-    <div>
-        <table class="center" id="demo"></table>
-    </div>   <!--div class="threequarter container padded center"-->
-	
-	<!--/div-->
-    <!--ul id="imgList"></ul-->
     
-   <div ng-view></div>
-
+    
+    <!--<tr>-->
+    <!--sets size for map on screen-->
+    <th><img id="map_slot1" style="width:250px"></th>
+    <br>
    
-   
+    <!--creates table for pictures and descriptions-->        
+    <div>
+        <table id="demo"></table>
+    </div>  
+    
+    <div class = "center"><h2>Click on the classroom or classroom range <br/> of the place you need to go.</h2></div>
+     
+    
+     <!--makes buttons increase size when clicked
+    and return when something else is clicked-->   
     <script>
-        var roomnum = null; //the current room selection
+            $("button").on("click", function(){
+                $("button").removeClass("selected");
+                $(this).addClass("selected")});
+    </script>
         
+    <table>   
+    <div ng-view></div>
+    </table>
+    
+    <script>
+        //the current room selection
+        var selection = "R131"; 
+       
+       
+        //show general map in classroom page prior to selecting classrooms
+        showMap("map_slot1", "slugtrail-colleges_and_departments/Cowell/CowellMap.png");
+        
+        
+        //room 131
 	function showSet1(){
-            roomnum = "R131";
+            selection = "R131";
             loadXMLDoc();
-           // showMap("map_slot1", "slugtrail-colleges_and_departments/Cowell/131/131-map.JPG");
+            showMap("map_slot1", "slugtrail-colleges_and_departments/Cowell/131/131-map.JPG");
         }
-//		        showImg(name of image slot, image src);
-//                showImg("img_slot1","https://lh3.googleusercontent.com/8LKhF9LpK6xKpar244kqQFGLD6Y11bp40rf1LWh-4t02b7V8jrqrAtodZLSUKq0bhYseO-Lum8WEww=w1366-h599-rw");
-//		        showImg(name of text slot, content of text);
-//                showMap("map_slot1", "slugtrail-colleges_and_departments/Cowell/131/131-map.JPG");
-//                showImg("img_slot1","slugtrail-colleges_and_departments/Cowell/foundation/1-foundation.JPG");
-//                showTxt("txt_slot1","Begin at the Bookstore/Cowell/Stevenson bus stop.");
-//		        showImg("img_slot2","slugtrail-colleges_and_departments/Cowell/foundation/2-foundation.jpg");
-//		        showTxt("txt_slot2","Head up the stairs to the left of the bus stop.");
-//		        showImg("img_slot3","slugtrail-colleges_and_departments/Cowell/foundation/3-foundation.jpg");
-//                showTxt("txt_slot3","Take the left fork to stay left of the dorm buildings.");
-//                showImg("img_slot4","slugtrail-colleges_and_departments/Cowell/foundation/4-foundation.jpg");
-//                showTxt("txt_slot4","Continue up the hill.");
-//                showImg("img_slot5","slugtrail-colleges_and_departments/Cowell/foundation/5-foundation.jpg");
-//                showTxt("txt_slot5","At the end of the dorm building, take a right.");
-//                showImg("img_slot6","slugtrail-colleges_and_departments/Cowell/foundation/6-foundation.jpg");
-//                showTxt("txt_slot6","Head up the walkway with rails. ");
-//                showImg("img_slot7","slugtrail-colleges_and_departments/Cowell/foundation/7-foundation.jpg");
-//                showTxt("txt_slot7","Turn right at the end of the walkway at the dumpster. ");
-//                showImg("img_slot8","slugtrail-colleges_and_departments/Cowell/foundation/8-foundation.jpg");
-//                showTxt("txt_slot8","Turn left into the walkway between classrooms. ");
-//                
-//                showImg("img_slot7","slugtrail-colleges_and_departments/Cowell/131/1-131.JPG");
-//                showTxt("txt_slot7","Take the first door on the right.");
-//                showImg("img_slot8","slugtrail-colleges_and_departments/Cowell/131/131.JPG");
-//                showTxt("txt_slot8","Voila!");
-               
-	
-	
-	function showSet2(){
-            roomnum = "R134";
+        
+        
+        //room 134
+        function showSet2(){
+            selection = "R134";
             loadXMLDoc();
-//                showMap("map_slot1", "slugtrail-colleges_and_departments/Cowell/134/131-map.JPG");
-//                showImg("img_slot1","slugtrail-colleges_and_departments/Cowell/foundation/1-foundation.JPG");
-//                showTxt("txt_slot1","Begin at the Bookstore/Cowell/Stevenson bus stop.");
-//		        showImg("img_slot2","slugtrail-colleges_and_departments/Cowell/foundation/2-foundation.jpg");
-//		        showTxt("txt_slot2","Head up the stairs to the left of the bus stop.");
-//		        showImg("img_slot3","slugtrail-colleges_and_departments/Cowell/foundation/3-foundation.jpg");
-//                showTxt("txt_slot3","Take the left fork to stay left of the dorm buildings.");
-//                showImg("img_slot4","slugtrail-colleges_and_departments/Cowell/foundation/4-foundation.jpg");
-//                showTxt("txt_slot4","Continue up the hill.");
-//                showImg("img_slot5","slugtrail-colleges_and_departments/Cowell/foundation/5-foundation.jpg");
-//                showTxt("txt_slot5","At the end of the dorm building, take a right.");
-//                showImg("img_slot6","slugtrail-colleges_and_departments/Cowell/foundation/6-foundation.jpg");
-//                showTxt("txt_slot6","Head up the walkway with rails. ");
-//                showImg("img_slot7","slugtrail-colleges_and_departments/Cowell/foundation/7-foundation.jpg");
-//                showTxt("txt_slot7","Turn right at the end of the walkway at the dumpster. ");
-//                showImg("img_slot8","slugtrail-colleges_and_departments/Cowell/foundation/8-foundation.jpg");
-//                showTxt("txt_slot8","Turn left into the walkway between classrooms. ");
-//                
-//                showImg("img_slot7","slugtrail-colleges_and_departments/Cowell/134/1-134.JPG");
-//                showTxt("txt_slot7","Continue down the walkway.");
-//                showImg("img_slot8","slugtrail-colleges_and_departments/Cowell/134/2-134.JPG");
-//                showTxt("txt_slot8","And continue…");
-//                showImg("img_slot9","slugtrail-colleges_and_departments/Cowell/134/3-134.jpg");
-//                showTxt("txt_slot9","Go through the doors at the end of the walkway.");
-//                showImg("img_slot10","slugtrail-colleges_and_departments/Cowell/134/4-134.jpg");
-//                showTxt("txt_slot10","Go through the doors on the left.");
-//                showImg("img_slot11","slugtrail-colleges_and_departments/Cowell/134/5-134.jpg");
-//                showTxt("txt_slot11","Voila!");
-	}
-	
-	function showSet3(){
-            roomnum = "MB";
+            showMap("map_slot1", "slugtrail-colleges_and_departments/Cowell/131/131-map.JPG");
+        }
+        
+        
+        //classrooms in main building
+        function showSet3(){
+            selection = "MB";
             loadXMLDoc();
-//                showMap("map_slot1", "slugtrail-colleges_and_departments/Cowell/mainbuilding/main building.JPG");
-//                showImg("img_slot1","slugtrail-colleges_and_departments/Cowell/foundation/1-foundation.JPG");
-//                showTxt("txt_slot1","Begin at the Bookstore/Cowell/Stevenson bus stop.");
-//		        showImg("img_slot2","slugtrail-colleges_and_departments/Cowell/foundation/2-foundation.jpg");
-//		        showTxt("txt_slot2","Head up the stairs to the left of the bus stop.");
-//		        showImg("img_slot3","slugtrail-colleges_and_departments/Cowell/foundation/3-foundation.jpg");
-//                showTxt("txt_slot3","Take the left fork to stay left of the dorm buildings.");
-//                showImg("img_slot4","slugtrail-colleges_and_departments/Cowell/foundation/4-foundation.jpg");
-//                showTxt("txt_slot4","Continue up the hill.");
-//                showImg("img_slot5","slugtrail-colleges_and_departments/Cowell/foundation/5-foundation.jpg");
-//                showTxt("txt_slot5","At the end of the dorm building, take a right.");
-//                showImg("img_slot6","slugtrail-colleges_and_departments/Cowell/foundation/6-foundation.jpg");
-//                showTxt("txt_slot6","Head up the walkway with rails. ");
-//                showImg("img_slot7","slugtrail-colleges_and_departments/Cowell/foundation/7-foundation.jpg");
-//                showTxt("txt_slot7","Turn right at the end of the walkway at the dumpster. ");
-//                showImg("img_slot8","slugtrail-colleges_and_departments/Cowell/foundation/8-foundation.jpg");
-//                showTxt("txt_slot8","Turn left into the walkway between classrooms. ");
-//        
-//                showImg("img_slot7","slugtrail-colleges_and_departments/Cowell/mainbuilding/1-mainbuilding.jpg");
-//                showTxt("txt_slot7","Take the first door on the left.");
-//                showImg("img_slot8","slugtrail-colleges_and_departments/Cowell/mainbuilding/2-mainbuilding.JPG");
-//                showTxt("txt_slot8","Walk through the hallway.");
-//                showImg("img_slot9","slugtrail-colleges_and_departments/Cowell/mainbuilding/113.JPG");
-//                showTxt("txt_slot9","Voila, 113!");
-//                showImg("img_slot10","slugtrail-colleges_and_departments/Cowell/mainbuilding/120.JPG");
-//                showTxt("txt_slot10","Voila, 120!");
-//                showImg("img_slot11","slugtrail-colleges_and_departments/Cowell/mainbuilding/124.JPG.jpg");
-//                showTxt("txt_slot11","Voila, 124!");
-	}
-	
+            showMap("map_slot1", "slugtrail-colleges_and_departments/Cowell/mainbuilding/mainbuilding.JPG");
+        }
+        
+        
+        //classrooms in upper main building
         function showSet4(){
-            roomnum = "UMB";
+            selection = "UMB";
             loadXMLDoc();
-//                showMap("map_slot1", "slugtrail-colleges_and_departments/Cowell/upstairs_mainbuilding/main building.JPG");
-//                showImg("img_slot1","slugtrail-colleges_and_departments/Cowell/foundation/1-foundation.JPG");
-//                showTxt("txt_slot1","Begin at the Bookstore/Cowell/Stevenson bus stop.");
-//		        showImg("img_slot2","slugtrail-colleges_and_departments/Cowell/foundation/2-foundation.jpg");
-//		        showTxt("txt_slot2","Head up the stairs to the left of the bus stop.");
-//		        showImg("img_slot3","slugtrail-colleges_and_departments/Cowell/foundation/3-foundation.jpg");
-//                showTxt("txt_slot3","Take the left fork to stay left of the dorm buildings.");
-//                showImg("img_slot4","slugtrail-colleges_and_departments/Cowell/foundation/4-foundation.jpg");
-//                showTxt("txt_slot4","Continue up the hill.");
-//                showImg("img_slot5","slugtrail-colleges_and_departments/Cowell/foundation/5-foundation.jpg");
-//                showTxt("txt_slot5","At the end of the dorm building, take a right.");
-//                showImg("img_slot6","slugtrail-colleges_and_departments/Cowell/foundation/6-foundation.jpg");
-//                showTxt("txt_slot6","Head up the walkway with rails. ");
-//                showImg("img_slot7","slugtrail-colleges_and_departments/Cowell/foundation/7-foundation.jpg");
-//                showTxt("txt_slot7","Turn right at the end of the walkway at the dumpster. ");
-//                showImg("img_slot8","slugtrail-colleges_and_departments/Cowell/foundation/8-foundation.jpg");
-//                showTxt("txt_slot8","Turn left into the walkway between classrooms. ");
-//                
-//                showImg("img_slot7","slugtrail-colleges_and_departments/Cowell/upstairs_mainbuilding/1-upstairs.jpg");
-//                showTxt("txt_slot7","Take the first door on the left and make a right in the hallway, going up the stairs on the right.");
-//                showImg("img_slot8","slugtrail-colleges_and_departments/Cowell/upstairs_mainbuilding/216.JPG");
-//                showTxt("txt_slot8","Voila, 216!");
-//                showImg("img_slot9","slugtrail-colleges_and_departments/Cowell/upstairs_mainbuilding/218.JPG");
-//                showTxt("txt_slot9","Voila, 218!");
-//                showImg("img_slot10","slugtrail-colleges_and_departments/Cowell/upstairs_mainbuilding/220.JPG");
-//                showTxt("txt_slot10","Voila, 220!");
-//                showImg("img_slot11","slugtrail-colleges_and_departments/Cowell/upstairs_mainbuilding/222.JPG");
-//                showTxt("txt_slot11","Voila, 222!");
-//                showImg("img_slot12","slugtrail-colleges_and_departments/Cowell/upstairs_mainbuilding/223.JPG");
-//                showTxt("txt_slot12","Voila, 223!");
-//                showImg("img_slot13","slugtrail-colleges_and_departments/Cowell/upstairs_mainbuilding/224, 225.JPG");
-//                showTxt("txt_slot13","Voila, 224, 225!");
-	}
+            showMap("map_slot1", "slugtrail-colleges_and_departments/Cowell/mainbuilding/mainbuilding.JPG");
+        }
+ 
+        
+        //
+        function loadXMLDoc(){
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if(this.readyState == 4 && this.status == 200)
+                    getDataSet(this);
+                //else alert("database not ready yet!");
+            };
+            xmlhttp.open("GET", "db_cowell.xml", true); //get data from database
+            xmlhttp.send();
+        }
         
         
-        
-        
+        //display specific map fixed on right of screen
         function showMap(slot_num, src){
             var img = document.createElement("img");
             var snum = slot_num;
             img.src = src;
             var el = document.getElementById(slot_num);
             el.style.position = "fixed";
-            el.style.bottom = 0;
+            el.style.bottom = 100;
             el.style.right = 0;
 //            el.style.paddingTop= "245px";
             el.src = img.src;
         }
-               
-//	function showImg(slot_num, src){
-//		var img = document.createElement("img");
-//		var snum = slot_num;
-//		img.src = src;
-//		document.getElementById(slot_num).src=img.src;
-//	}
-//	
-//	function showTxt(slot_num, text){
-//		var p = document.createElement("p");
-//		var snum = slot_num;
-//		//var th_content = text;
-//		document.getElementById(slot_num).innerHTML = text;
-//	}
-//       
-//	if($.mobile.media("screen and (max-device-width: 480px)")) {
-//		// Change viewport for smaller devices
-//		$('meta[name=viewport]').attr('content','width=device-width, initial-scale=1');
-//	}
-//        
-//        //remove content of a slot
-//        function cleanSlot(slot_name) {
-//            document.getElementById(slot_name).innerHTML = "";
-//            document.getElementById(slot_name).src = "";
-//        }
         
-        function loadXMLDoc(){
-            var xmlhttp = new XMLHttpRequest();
-            xmlhttp.onreadystatechange = function() {
-                if(this.readystate == 4 && this.status == 200){
-                    getDataSet(this);
-                }
-            };
-            xmlhttp.open("GET", "db_kresge.xml", true); //get data from database
-            xmlhttp.send();
-        }
         
+        //
         function getDataSet(xml){
+            //var tagRequested = roomnum;
             var i;
             var xmlDoc = xml.responseXML;
             var table = "<tr><th>Image</th><th>Description</th></tr>";
-            var x = xmlDoc.getElementByTagName(roomnum);
+
+            var x = xmlDoc.getElementsByTagName(selection);
             for(i = 0; i < x.length; i++){
                 table += "<tr><td><img src=" + 
-                        x[i].getElementByTagName("IMGSRC") [0].childNodes[0].nodeValue +
-                        "></img></td><td>" + 
-                        x[i].getElementByTagName("DSCPT") [0].childNodes[0].nodeValue + 
+                        x[i].getElementsByTagName("IMGSRC") [0].childNodes[0].nodeValue +
+                        " ></img></td><td>" + 
+                        x[i].getElementsByTagName("DSCPT") [0].childNodes[0].nodeValue + 
                         "</td></tr>";
             }
             document.getElementById("demo").innerHTML = table;
         }
         
-       </script>
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
-  
-  <!--script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="app.js"></script>
-  <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
-  <script src="components/version/version.js"></script>
-  <script src="components/version/version-directive.js"></script>
-  <script src="components/version/interpolate-filter.js"></script-->
+        
+        //function to bring user to top of page, used with TOP button
+        function goTop(){
+          scroll(0,0);
+        }
+    </script>
 </body>
 </html>
