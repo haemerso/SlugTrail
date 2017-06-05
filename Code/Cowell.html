@@ -32,6 +32,28 @@
                 bottom: 5em;
                 right: 0em;
             }
+            
+            
+            /*styling the MAP button*/
+            #mapbtn{
+                position: fixed;
+                bottom: 5em;
+                left: 1em;
+            }
+            
+            
+            /*styling the MAP itself*/
+            #map{
+                display: none; /*hidden by default*/
+                position: fixed;
+                //padding-top: 100px; /*location of the box*/
+                left: 5em;
+                right: 5em;
+                top: 5em;
+                margin: 0 auto;
+                width: 75%; /*full width*/
+                height: 75%; /*full height*/
+            }
                         
             
             img{
@@ -73,11 +95,7 @@
         </div>
     </div>
     
-    
-    <!--sets size for map on screen-->
-    <th><img id="map_slot" style="width:250px"></th>
-    <br>
-   
+ 
     <!--creates table for pictures and descriptions-->        
     <div>
         <table id="img_dscpt_table"></table>
@@ -97,6 +115,16 @@
     <table>   
     <div ng-view></div>
     </table>
+    
+    <!--MAP button-->
+    <a class="btn white padded" id="mapbtn" onclick="show_map()"><div class=""responsive><div class="img">
+    </div></div>MAP</a>
+    
+    <!--the map. it will be displayed when Map button is clicked-->
+    <!--click map button again to hide it-->
+    <div id="map">
+        <img id="map_slot"></img>
+    </div>
     
     <script>
         //the current room selection
@@ -163,6 +191,28 @@
             el.style.bottom = 100;
             el.style.right = 0;
             el.src = img.src;
+        }
+        
+        //functions for the map
+        var bool_map_show = 0; //status of the map, 0 for hidden
+        var map = document.getElementById('map');
+        
+        function show_map(){
+            //if the map is hidden, display the map
+            if(bool_map_show == 0){
+                //change the color of MAP button
+                mapbtn.classList.remove("white");
+                mapbtn.classList.add("red");
+                map.style.display = "block";
+                bool_map_show = 1; //status is 1 for visible
+            }
+            //if the map is display, hide the map
+            else{
+                mapbtn.classList.add("white");
+                mapbtn.classList.remove("red");
+                map.style.display = "none";
+                bool_map_show = 0;
+            }
         }
         
         
