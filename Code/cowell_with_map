@@ -230,11 +230,16 @@
         function show_map(){
             //if the map is hidden, display the map
             if (bool_map_show == 0){
+                //change the color of MAP button
+                mapbtn.classList.remove("white");
+                mapbtn.classList.add("red");
                 map.style.display = "block";
                 bool_map_show = 1;
             }
             //if the map is displayed, hide the map
             else {
+                mapbtn.classList.add("white");
+                mapbtn.classList.remove("red");
                 map.style.display = "none";
                 bool_map_show = 0;
             }
