@@ -118,6 +118,10 @@
     <div ng-view></div>
     </table>
     
+    <!--MAP button-->
+    <a class="btn white padded" id="mapbtn" onclick="show_map()"><div class="responsive"><div class="img">
+    </div></div>MAP</a>
+    
     <!--the map. it will be displayed when Map button is clicked.-->
     <!--click map button again to hide it-->
     <div id="map">
