@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!--COWELL COLLEGE-->
+
+<html>
+    
+<head>
+
+  <title>SlugTrail</title>
+    
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="index.css" type="text/css" /> 
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+ 
+</head>
+
+<body>
+      
+    <style>
+            /*styling the TOP button*/
+            #to-top{
+                position:fixed;
+                bottom: 5em;
+                right: 0em;
+            }
+            
+            /*styling the MAP button*/    
+            #mapbtn{
+                position:fixed;
+                bottom: 10em;
+                right: 0em;
+            }
+            
+            /*styling for the MAP itself*/
+	    #map{
+		display: none; /* Hidden by default */
+                position:fixed;
+                //padding-top: 100px; /* Location of the box */
+		left: 5em;
+                right: 5em;
+                top: 5em;
+                margin: 0 auto;
+                width: 75%; /* Full width */
+                height: 75%; /* Full height */
+            }         
+            
+            img{
+                top: 100%; bottom: 100%;
+                margin: auto;
+                width: 100%;
+                height: auto;
+                max-width: 450px;
+            }
+    </style>
+    
+    <!--create top button-->  
+    <a class="btn white padded" id="to-top" onclick="goTop()"><i class ="fa fa-angle-double-up fa-5x"></i>TOP</a>
+    
+    <!--creates classroom button banner and title-->
+    <div class="header">
+        <br/>
+        <div class="center"> <h1>Cowell College</h1></div>
+        <div class ="border">
+            <div class ="center padded">
+                <a href = "index.html"><span class = "glyphicon glyphicon-home"></span></a>
+                
+                
+                <!--creates home button-->
+                <style>
+                .glyphicon{
+                    margin-right: 20px;
+                    font-size: 30px;
+                    color: white;
+                </style>
+                
+                
+                <!--display directions and images when clicked, calls showSet functions-->
+                <button class="btn yellow rounded" onclick="showSetR131()">131</button>  
+                <button class="btn yellow rounded" onclick="showSetR134()">134</button>
+                <button class="btn yellow rounded" onclick="showSetMB()">Main Building(110-125)</button>
+                <button class="btn yellow rounded" onclick="showSetUMB()">Upstairs Main Building(210-225) </button>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--sets size for map on screen-->
+    <!--commented out to test if hidden map is working-->
+    <!--th><img id="map_slot" style="width:250px"></th>
+    <br-->
+   
+    <!--creates table for pictures and descriptions-->        
+    <div>
+        <table id="img_dscpt_table"></table>
+    </div>  
+    
+    <div class = "center"><h2>Click on the classroom or classroom range <br/> of the place you need to go.</h2></div>
+     
+    
+     <!--makes buttons increase size when clicked
+    and return when something else is clicked-->   
+    <script>
+            $("button").on("click", function(){
+                $("button").removeClass("btn_selected");
+                $(this).addClass("btn_selected")});
+    </script>
+        
+    <table>   
+    <div ng-view></div>
+    </table>
+    
+    <!--the map. it will be displayed when Map button is clicked.-->
+    <!--click map button again to hide it-->
+    <div id="map">
+        <img id="map_slot" ></img>
+    </div>
+
+    <script>
+        //the current room selection
+        var selection = "R131"; 
+       
+       
+        //show general map in classroom page prior to selecting classrooms
+        showMap("map_slot", "slugtrail-colleges_and_departments/Cowell/CowellMap.png");
+        
+        
+        //room 131
+	function showSetR131(){
+            selection = "R131";
+            loadXMLDoc();
+            showMap("map_slot", "slugtrail-colleges_and_departments/Cowell/131/131-map.JPG");
+        }
+        
+        
+        //room 134
+        function showSetR134(){
+            selection = "R134";
+            loadXMLDoc();
+            showMap("map_slot", "slugtrail-colleges_and_departments/Cowell/131/131-map.JPG");
+        }
+        
+        
+        //classrooms in main building
+        function showSetMB(){
+            selection = "MB";
+            loadXMLDoc();
+            showMap("map_slot", "slugtrail-colleges_and_departments/Cowell/mainbuilding/mainbuilding.JPG");
+        }
+        
+        
+        //classrooms in upper main building
+        function showSetUMB(){
+            selection = "UMB";
+            loadXMLDoc();
+            showMap("map_slot", "slugtrail-colleges_and_departments/Cowell/mainbuilding/mainbuilding.JPG");
+        }
+ 
+        
+        //load XML document if the database file is availabe and responsive
+        function loadXMLDoc(){
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+            //check if the database is available
+                if(this.readyState == 4 && this.status == 200)
+                    getDataSet(this);
+                //else alert("database not ready yet!");
+            };
+            xmlhttp.open("GET", "db_cowell.xml", true); //get data from database
+            xmlhttp.send();
+        }
+        
+        
+        //display specific map fixed on right of screen
+        function showMap(slot, src){
+            var img = document.createElement("img");
+            var snum = slot;
+            img.src = src;
+            var el = document.getElementById(slot);
+            el.style.position = "fixed";
+            el.style.bottom = 100;
+            el.style.right = 0;
+            el.src = img.src;
+        }
+        
+        
+        //get data from requested xml data 
+        function getDataSet(xml){
+            var i;
+            var xmlDoc = xml.responseXML;
+            var table = "<tr><th>Image</th><th>Description</th></tr>";
+            
+            //bytagname: get all the data wraped in the requested tag
+            //using the for loop below
+            var x = xmlDoc.getElementsByTagName(selection);
+            for(i = 0; i < x.length; i++){
+            //creating a table and inserting the data from xml database
+            //into table
+                table += "<tr><td><img src=" + 
+                        x[i].getElementsByTagName("IMGSRC") [0].childNodes[0].nodeValue +
+                        " ></img></td><td>" + 
+                        x[i].getElementsByTagName("DSCPT") [0].childNodes[0].nodeValue + 
+                        "</td></tr>";
+            }
+            document.getElementById("img_dscpt_table").innerHTML = table;
+        }
+        
+        
+        //function to bring user to top of page, used with TOP button
+        function goTop(){
+          scroll(0,0);
+        }
+        
+        //functions for the map
+        var bool_map_show = 0;//status of the map, 0 for hidden
+        var map = document.getElementById('map');
+
+        function show_map(){
+            //if the map is hidden, display the map
+            if (bool_map_show == 0){
+                map.style.display = "block";
+                bool_map_show = 1;
+            }
+            //if the map is displayed, hide the map
+            else {
+                map.style.display = "none";
+                bool_map_show = 0;
+            }
+        }
+    
+    </script>
+</body>
+</html>
