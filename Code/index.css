@@ -4,7 +4,7 @@
   License: BSD
 ************/
 
-button.selected{
+button.btn_selected{
     color: blue;
     font-size: 90%;
 }

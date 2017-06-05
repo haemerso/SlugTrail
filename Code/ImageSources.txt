@@ -1,0 +1,57 @@
+10 colleges:
+http://housing.ucsc.edu/colleges/index.html
+
+ARCenter:
+https://admissions.ucsc.edu/campus-life/support-services.html
+
+classrooms:
+http://its.ucsc.edu/services/index.html
+
+Engineering:
+https://ua.soe.ucsc.edu/
+http://its.ucsc.edu/computer-labs/descriptions/be105.html
+
+Baskin Aud:
+http://its.ucsc.edu/classrooms/media-info/eng101.html
+
+Theater arts:
+http://theater.ucsc.edu/
+
+McHenry Library:
+http://devcon-const.com/projects/education/ucsc-mchenry-library/
+
+Baytree:
+http://www.ehdd.com/work/bay-tree-bookstore-and-graduate-student-commons
+
+Biomedical, Physical sciences, sinsheimer:
+https://cbse.soe.ucsc.edu/research/buildings
+
+clark kerr hall:
+https://www.indybay.org/newsitems/2014/12/09/18765291.php
+
+digital arts:
+https://www.dpr.com/projects/digital-arts-research-center
+
+earth and marine:
+http://eps.ucsc.edu/about/contact-visitors.html
+
+elena baskin:
+http://art.ucsc.edu/contact
+
+humanities:
+http://hackerarchitects.com/humanities-complex
+
+social sciences:
+https://twitter.com/ucsc_admission/status/732645587372253184
+
+interdisciplinary scienecs:
+http://www.lib.berkeley.edu/uchistory/archives_exhibits/campus_planning/atkinson_archive/ucsc/interdisciplinary.html
+
+music center:
+http://clp.ucsc.edu/about/index.html
+
+opers mult:
+http://opers.ucsc.edu/facilities/East%20Field%20House.html
+
+Thimann labs:
+http://www.lib.berkeley.edu/uchistory/archives_exhibits/campus_planning/atkinson_archive/ucsc/thimann.html

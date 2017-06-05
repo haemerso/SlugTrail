@@ -30,6 +30,14 @@
                 width: 100%;
                 height: auto;
             }
+            
+            
+            /*enables scroll to appropriate location by letter*/
+            a.anchor{
+                position: relative;
+                top: -250px;
+                visibility: hidden;
+            }
         </style>
         
     </head>
@@ -52,7 +60,6 @@
             <a href="#E" class="btn yellow rounded">E</a>
             <a href="#H" class="btn yellow rounded">H</a>
             <a href="#I" class="btn yellow rounded">I</a>
-            <a href="#J" class="btn yellow rounded">J</a>
             <a href="#K" class="btn yellow rounded">K</a>
             <a href="#M" class="btn yellow rounded">M</a>
             <a href="#O" class="btn yellow rounded">O</a>
@@ -68,51 +75,52 @@
    <!--displays all colleges and department images as buttons in lexicographical
    order and provides anchor points for the menu to jump to-->
    <div class="center">
-   <a name="A">
+   <a class="anchor" name="A">
        <a class="btn blue rounded center" > <div class="frame"> <img src ="slugtrail-colleges_and_departments/arcenter.jpg"></div></a>
-   <a name="B">
+   <a class="anchor" name="B">
        <a class="btn blue rounded center" > <div class="frame"> <img src ="slugtrail-colleges_and_departments/baskinaud.jpg"></div></a>
        <a class="btn blue rounded center" > <div class="frame"> <img src ="slugtrail-colleges_and_departments/baytree.jpg"></div></a>
        <a class="btn blue rounded center" > <div class="frame"> <img src ="slugtrail-colleges_and_departments/biomedical.jpg"></div> </a>
-   <a name="C">
+   <a class="anchor" name="C">
        <a class="btn blue rounded center" > <div class="frame"> <img src ="slugtrail-colleges_and_departments/clarkkerrhall.jpg"></div></a>
        <a class="btn blue rounded center" >  <div class="frame"><img src ="slugtrail-colleges_and_departments/classroomunit.jpg"></div></a>
        <a class="btn blue rounded center" href="Cowell.html" >  <div class="frame"><img src ="slugtrail-colleges_and_departments/cowell.jpg"></div></a>
        <a class="btn blue rounded center" >  <div class="frame"><img src ="slugtrail-colleges_and_departments/crown.jpg"></div></a>
-   <a name="D">
+   <a class="anchor" name="D">
        <a class="btn blue rounded center" >  <div class="frame"><img src ="slugtrail-colleges_and_departments/UCSC_DARC.jpg"></div></a>
-   <a name="E">
+   <a class="anchor" name="E">
        <a class="btn blue rounded center" >  <div class="frame"><img src ="slugtrail-colleges_and_departments/E2.jpg"></div></a>
        <a class="btn blue rounded center" >  <div class="frame"><img src ="slugtrail-colleges_and_departments/earthandmarine.jpg"></div></a>
        <a class="btn blue rounded center" >  <div class="frame"><img src ="slugtrail-colleges_and_departments/elenabaskin.jpg"></div></a>
-   <a name="H">
+   <a class="anchor" name="H">
        <a class="btn blue rounded center" > <div class="frame"> <img src ="slugtrail-colleges_and_departments/UCSC-Humanities.jpg"></div></a>
-   <a name="I">
+   <a class="anchor" name="I">
        <a class="btn blue rounded center" >  <div class="frame"><img src ="slugtrail-colleges_and_departments/interdisciplinary.jpg" ></div></a>
-   <a name="J">
-   <a name="K">
+   <a class="anchor" name="K">
        <a class="btn blue rounded center" href="kresge.html" > <div class="frame"><img src ="slugtrail-colleges_and_departments/kresge.jpg"></div></a>
-   <a name="M">
+   <a class="anchor" name="M">
        <a class="btn blue rounded center" > <div class="frame"><img src ="slugtrail-colleges_and_departments/mchenry.jpg"></div></a>
        <a class="btn blue rounded center" > <div class="frame"> <img src ="slugtrail-colleges_and_departments/merrill.jpg"></div></a>
        <a class="btn blue rounded center" >  <div class="frame"><img src ="slugtrail-colleges_and_departments/mediatheater.jpg"></div></a>
        <a class="btn blue rounded center" >  <div class="frame"><img src ="slugtrail-colleges_and_departments/musiccenter.jpg"></div></a>
-   <a name="O">
+   <a class="anchor" name="O">
        <a class="btn blue rounded center" href="Oakes.html" > <div class="frame"><img src ="slugtrail-colleges_and_departments/oakes.jpg"></div></a>  
        <a class="btn blue rounded center" >  <div class="frame"><img src ="slugtrail-colleges_and_departments/opersmulti.jpg"></div></a>
-   <a name ="P">
+   <a class="anchor" name ="P">
        <a class="btn blue rounded center" >  <div class="frame"><img src ="slugtrail-colleges_and_departments/physicalsciences.jpg"></div></a>
        <a class="btn blue rounded center" >  <div class="frame"><img src ="slugtrail-colleges_and_departments/porter.jpg"></div></a>
-   <a name="R">
+   <a class="anchor" name="R">
        <a class="btn blue rounded center" >  <div class="frame"><img src ="slugtrail-colleges_and_departments/rachelcarson.jpg"></div></a>
-   <a name="S">
+   <a class="anchor" name="S">
        <a class="btn blue rounded center" >  <div class="frame"><img src ="slugtrail-colleges_and_departments/sinsheimer.jpg"></div></a>
        <a class="btn blue rounded center" >  <div class="frame"><img src ="slugtrail-colleges_and_departments/socsci.jpg"></div></a>
        <a class="btn blue rounded center" >  <div class="frame"><img src ="slugtrail-colleges_and_departments/stevenson.jpg"></div></a>
-   <a name="T">
+   <a class="anchor" name="T">
        <a class="btn blue rounded center" >  <div class="frame"><img src ="slugtrail-colleges_and_departments/theaterarts.jpg"></div></a>
        <a class="btn blue rounded center" >  <div class="frame"><img src ="slugtrail-colleges_and_departments/thimannlab.jpg"></div></a>
        <a class="btn blue rounded center" >  <div class="frame"><img src ="slugtrail-colleges_and_departments/thimannlecture.jpg"></div></a>
+       
+  <!--creates TOP button-->
   <a class="btn white padded" id="to-top" onclick="goTop()"><i class ="fa fa-angle-double-up fa-5x"></i>TOP</a>
   </div>
  
